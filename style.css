@@ -47,5 +47,11 @@
           margin-bottom: 10px; /* Space between image and text */
         }
       }
-      
+      /* Hide the image on screens smaller than or equal to 768px (Bootstrap's sm breakpoint) */
+@media (max-width: 768px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
 
