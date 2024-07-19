@@ -19,11 +19,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
+
+    
     <body style="align-items: center;" class=" m-0">
         <header >
           <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
             <a href="/" class="px-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
-              <img src="./images/logo.png" height="40" alt="">
+              <img src="./images/logo.png" height="50" alt="">
             </a>
           
             <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
@@ -49,20 +51,99 @@
                           <a class="nav-link" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Service
-                          </a>
-                          <ul class="dropdown-menu" style="background-color: #f0ebe3;">
-                            <li><a class="dropdown-item pt-3 pb-3" href="webdesign.html">Web Design</a></li>
+                          <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Service</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #f0ebe3;">
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webdesign.html">Web Design</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="businessweb.html">Business Web-Design</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="resweb.html">Responsive Web-Design</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="cmsweb.html">CMS Web-Design Solution</a></li>
+                              </ul>
+                            </li>
+                            <style>
+                              .dropdown-submenu:hover .dropdown-menu {
+  display: block;
+  position: absolute; /* Make sure submenu is positioned correctly */
+  top: 100%; /* Adjust if necessary to align with the parent */
+  left: 0;
+}
+
+/* Optional: Add a slight shadow for better visual effects */
+.dropdown-menu {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Optional: Change background color on hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #d1bfa7; /* Change to the color you prefer */
+}
+                            </style>
+
+
                             <li><a class="dropdown-item pt-3 pb-3" href="webmaintenance.html">Web Maintenance</a></li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="webapp.html">Web Application</a></li>
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webapp.html">Web Application</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="custtomweb.html">Custom Web Applications</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="matrimony.html">Matrimony Web Solutions</a></li>
+                              </ul>
+                            </li>
                             <li><a class="dropdown-item pt-3 pb-3" href="mobileapp.html">Mobile Application</a></li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="businesssol.html">Business Solutions</a></li>
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="businesssol.html">Business Solutions</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="domains.html">Dominas, Hosting and Cloud</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="personal.html">Personal and Enterprise Email</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="google.html">Google Apps and Services</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="email.html">Email Campaign Management</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="aws.html">AWS Services Implementations</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="design.html">Design and Branding</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="digital.html">Digital Marketing and Social Media</a></li>
+                              </ul>
+                            </li>
                             <li><a class="dropdown-item pt-3 pb-3" href="marketting.html">Marketing Support Services</a></li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service.</a></li>
+                            <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service</a></li>
                             <li><a class="dropdown-item pt-3 pb-3" href="bpo.html">BPO</a></li>
                           </ul>
                         </li>
+                        <style>
+                          /* Show the top-level dropdown menu on hover */
+                          .nav-item:hover > .dropdown-menu {
+                            display: block;
+                          }
+                      
+                          /* Ensure dropdown menu hides on click for top-level items */
+                          .dropdown-menu {
+                            display: none;
+                          }
+                      
+                          /* Optional: Add a slight shadow to dropdown menu */
+                          .dropdown-menu {
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                          }
+                      
+                          /* Optional: Add a small delay to avoid flickering */
+                          .nav-item {
+                            position: relative;
+                          }
+                      
+                          /* Styling for the submenu dropdown */
+                          .dropdown-submenu:hover > .dropdown-menu {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            margin-top: -1px;
+                          }
+                      
+                          /* Optional: Styling for hover effects */
+                          .dropdown-item:hover {
+                            background-color: #e0d7ce;
+                          }
+                        </style>
                         <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="talent.html"> Talent Management</a>
                         </li>
@@ -70,15 +151,39 @@
                           <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Careers</a>
+                          <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Contact</a>
+                          <a class="nav-link" aria-current="page" href="co ">Contact</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </nav>
+
+
+                <style>
+                   /* Custom styles for the dropdown submenu */
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      border-radius: 0 0.25rem 0.25rem 0.25rem;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+
+    /* Ensure that submenu items are centered */
+    .dropdown-menu .dropdown-menu {
+      margin-left: 0.5rem;
+    }
+                </style>
        <!-- Navbar -->
            
         </header>
@@ -87,14 +192,14 @@
         <!-- Banner section -->
         <div class="banner container-fluid" style="background-image: url(./images/Rectangle%203.jpg); height: 400px;">
           <div class="row h-100">
-            <div class=" col d-flex justify-content-center align-items-center text-light">
+            <div class=" col-12 col-lg-6 d-flex justify-content-center align-items-center text-light">
               <h2 class="fw-bold">Mobile Application
                 <br>
                 <p class="h6 fw-bold">"Make a global impact with your innovative thinking"</p>
               </h2>
               
             </div>
-            <div class="col d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
               <img class="img-fluid" src="./images/cuate.png" alt="">
             </div>
           </div>
@@ -271,7 +376,7 @@
         <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
             <!-- place footer here -->
              <div class="row ">
-              <div  class="col">
+              <div  class="col-12 col-lg-3 col-md-3">
                 <h6 style="font-weight: 400;">About</h6>
                 <h6 style="font-weight: 400;">Contact</h6>
                 <h6 style="font-weight: 400;">Payment Options</h6>
@@ -282,7 +387,7 @@
                 <h6 style="font-weight: 400;">Feedback</h6>
                 <h6 style="font-weight: 400;">Clients</h6>
               </div>
-              <div class="col">
+              <div class="col-12 col-lg-3 col-md-3">
                 <h6 style="font-weight: 400;">Responsive Web Design</h6>
                 <h6 style="font-weight: 400;">Web Design</h6>
                 <h6 style="font-weight: 400;">Web Maintenance</h6>
@@ -293,7 +398,7 @@
                 <h6 style="font-weight: 400;">Web Application</h6>
                 <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
               </div>
-              <div class="col">
+              <div class="col-12 col-lg-3 col-md-3">
                 <h6 style="font-weight: 400;">Business Solutions</h6>
                 <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
                 <h6 style="font-weight: 400;">Google Work Partner</h6>
@@ -305,7 +410,7 @@
                 <h6 style="font-weight: 400;">Email Campaign Management</h6>
               </div>
               
-              <div style="line-height: 5px;" class="col">
+              <div style="line-height: 5px;" class="col-12 col-lg-3 col-md-3 ">
                 <br><br>
                   <a href=""> <center><img  style="margin-bottom: 10px;" height="80px
                     " src="./images/New Logo 2.png" alt=""></center>  </a> 
@@ -330,10 +435,13 @@
                 
               </div>
              </div>
-             <br><br><br>
+         
              
            
         </footer>
+        <div style="background-color: #d21312;" class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
+          <p  class="mb-0"><b>&copy;  2024 JK Global IT Solutions.</b></p>
+        </div>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
