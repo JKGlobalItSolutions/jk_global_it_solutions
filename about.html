@@ -18,34 +18,11 @@
         />
        <link rel="stylesheet" href="style.css">
     </head>
-    <style>
-          <style>
-             body, html {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        .container-fluid {
-            width: 100%;
-            max-width: 100%;
-            padding-right: 0;
-            padding-left: 0;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .navbar, .header, main, footer {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    </style>
-    </style>
+
+
+  
+ 
+  
 
     <body style="align-items: center;" class=" m-0">
         <header >
@@ -63,157 +40,250 @@
           
 
                 <!-- Navbar -->
-               <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg container-fluid m-0">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav w-100 justify-content-around">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="about.html">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Service
-          </a>
-          <ul style="background-color: #f0ebe3;" class="dropdown-menu">
-            <li><a class="dropdown-item pt-3 pb-3" href="webdesign.html">Web Design</a></li>
-            
-            <li><a class="dropdown-item pt-3 pb-3" href="webmaintenance.html">Web Maintenance</a></li>
-           
-            <li><a class="dropdown-item pt-3 pb-3" href="webapp.html">Web Application</a></li>
-            <li><a class="dropdown-item pt-3 pb-3" href="mobileapp.html">Mobile Application</a></li>
-            <li><a class="dropdown-item pt-3 pb-3" href="businesssol.html">Business Solutions</a></li>
-            <li><a class="dropdown-item pt-3 pb-3" href="marketting.html">Marketting Support Services</a></li>
-            <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service.</a></li>
-            <li><a class="dropdown-item pt-3 pb-3" href="bpo.html">BPO</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="talent.html">Talent Management</a>
-        </li>
-       
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="clients.html">Clients</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="careers.html">Careers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg container-fluid m-0">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Service</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #f0ebe3;">
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webdesign.html">Web Design</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="businessweb.html">Business Web-Design</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="resweb.html">Responsive Web-Design</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="cmsweb.html">CMS Web-Design Solution</a></li>
+                              </ul>
+                            </li>
+                            <style>
+                              .dropdown-submenu:hover .dropdown-menu {
+  display: block;
+  position: absolute; /* Make sure submenu is positioned correctly */
+  top: 100%; /* Adjust if necessary to align with the parent */
+  left: 0;
+}
 
+/* Optional: Add a slight shadow for better visual effects */
+.dropdown-menu {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Optional: Change background color on hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #d1bfa7; /* Change to the color you prefer */
+}
+                            </style>
+
+
+                            <li><a class="dropdown-item pt-3 pb-3" href="webmaintenance.html">Web Maintenance</a></li>
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webapp.html">Web Application</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="custtomweb.html">Custom Web Applications</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="matrimony.html">Matrimony Web Solutions</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="dropdown-item pt-3 pb-3" href="mobileapp.html">Mobile Application</a></li>
+                            <li class="dropdown-submenu position-relative">
+                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="businesssol.html">Business Solutions</a>
+                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
+                                <li><a class="dropdown-item pt-3 pb-3" href="domains.html">Dominas, Hosting and Cloud</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="personal.html">Personal and Enterprise Email</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="google.html">Google Apps and Services</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="email.html">Email Campaign Management</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="aws.html">AWS Services Implementations</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="design.html">Design and Branding</a></li>
+                                <li><a class="dropdown-item pt-3 pb-3" href="digital.html">Digital Marketing and Social Media</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="dropdown-item pt-3 pb-3" href="marketting.html">Marketing Support Services</a></li>
+                            <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service</a></li>
+                            <li><a class="dropdown-item pt-3 pb-3" href="bpo.html">BPO</a></li>
+                          </ul>
+                        </li>
+                        <style>
+                          /* Show the top-level dropdown menu on hover */
+                          .nav-item:hover > .dropdown-menu {
+                            display: block;
+                          }
+                      
+                          /* Ensure dropdown menu hides on click for top-level items */
+                          .dropdown-menu {
+                            display: none;
+                          }
+                      
+                          /* Optional: Add a slight shadow to dropdown menu */
+                          .dropdown-menu {
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                          }
+                      
+                          /* Optional: Add a small delay to avoid flickering */
+                          .nav-item {
+                            position: relative;
+                          }
+                      
+                          /* Styling for the submenu dropdown */
+                          .dropdown-submenu:hover > .dropdown-menu {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            margin-top: -1px;
+                          }
+                      
+                          /* Optional: Styling for hover effects */
+                          .dropdown-item:hover {
+                            background-color: #e0d7ce;
+                          }
+                        </style>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="talent.html"> Talent Management</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+
+                <style>
+                   /* Custom styles for the dropdown submenu */
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      border-radius: 0 0.25rem 0.25rem 0.25rem;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+
+    /* Ensure that submenu items are centered */
+    .dropdown-menu .dropdown-menu {
+      margin-left: 0.5rem;
+    }
+                </style>
        <!-- Navbar -->
            
         </header>
+        <style>
+          .banner {
+            background-image: url(./images/Rectangle\ 15.png);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+          }
+          .custom-img {
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
         
-        <main >
-        <!-- Banner section -->
-        <div class="banner container-fluid" style="background-image: url(./images/Rectangle\ 15.png); height: 400px;">
-          <div class="row h-100">
-            <div class=" col d-flex justify-content-center align-items-center text-light">
-              <h2 class="fw-bold">About
-               
-              </h2>
-              
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              <img class="img-fluid" src="./images/about image.png" alt="">
-            </div>
-          </div>
-        </div>
-        <!-- Banner section -->
-         <!-- Content  Section-->
-         <div class="content container-fluid">
-          <div class="row h-100 ">
-            <div class="col d-flex flex-column justify-content-center m-4">
-              <h5 class="fw-bold" style="color: #000000;">The Company</h5>
-              <p style="color: #686D76;" class="mt-3 fw-normal ">
-                Founded in 2023 as a website development agency, JK Global IT Solutions Limited is a software development company based in Tiruvannamalai, India. With the goal of empowering its clients and team to succeed, the company evolved into a brand, JK Global IT Solutions, offering a variety of web solutions.
-              </p>
-               <center><h5 class="fw-bold" style="color: #D21312;">"Where Mastery Meets Distinction"</h5></center> 
-              <br>
-              <p class="fw-normal" style="color: #686D76;">
-                As our experience expanded through various client engagements and projects, our capabilities and proficiency flourished. Guided by our accumulated expertise, we envisioned delivering exceptional service to our clients, ensuring excellence in every aspect of our offerings, including delivery, support, and solutions. Our mission is to empower businesses, enabling them to achieve remarkable success.
-                <br><br>
-                JK Global IT Solution was established with the idea of providing compete It Consulting Services to various across the globe..
-                <br><br>
-                We believe in mapping people and Services with organizations as per “Capability & Opportunity Fit” concept that wil take the business to newer horizons. We trust in providing customized solutions to your company as we understand that each clients has their specific needs. A capable team of professionals help in providing solutions efficiently and quickly
-                <br><br>
-                At JK Global IT Solution, we are committed to excellence and customer satisfaction. Our team of skilled professionals works diligently to deliver solutions that not only meet but exceed your expectations.
-              </p>
-              
-            </div>
-            
-           
-          </div>
-          <div class="row">  <div class="col d-flex flex-column justify-content-center  m-4">
-            <h5 class="fw-bold" style="color: #000000;">MD & CEO</h5>
-            <p style="color: #686D76;" class="mt-3 fw-normal ">
-              The CEO and founder of JK Global IT Solution began with just seven staff members and has since expanded to include a fully certified team serving more than 150+ clients worldwide.
-              <br><br>
-              His goal has always been to unearth the fundamental principles of "Life and Growth," developing new techniques and processes, keeping an eye on the work, and leading the group toward the realization of a contented business with contented customers.
-            </p>
-           
-           
-            
-          </div></div>
-         
-        </div>
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-center gx-1">
-            
-            <!-- Column for images and text content -->
-            <div class="col-12 d-flex flex-column flex-md-row align-items-center">
-              <!-- Images Container (same row on mobile and desktop view) -->
-              <div class="d-flex flex-wrap flex-sm-nowrap align-items-center mb-3 mb-md-0" style="gap: 30px;">
-                <!-- First Image (hidden on mobile view) -->
-                <img src="./images/Rectangle 59.png" alt="" class="d-none d-sm-block">
-                <!-- Second Image (visible on all viewports) -->
-                <img src="./images/Frame 805.png" alt="">
+        <main>
+          <!-- Banner section -->
+          <div class="banner container-fluid d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light text-center text-lg-left">
+                <h2 class="fw-bold">About</h2>
               </div>
-              
-              <!-- Text Content Column -->
-              <div class="col d-flex flex-column mt-3 mt-md-0">
-                <h1 class="">VISION</h1>
-                <p>"Known for its innovative solutions and exceptional client service, JK Global IT Solutions sets the 
-                  standard in web services with its cutting-edge technologies and commitment to exceeding
-                  customer expectations."</p>
-                
-                <h1 class="">MISSION</h1>
-                <p>Our goal is to connect with as many businesses as possible, offering top-tier IT solutions through
-                  a robust and expansive network of skilled teams, all while ensuring client satisfaction and
-                  fostering a culture of happiness among our employees."</p>
+              <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./images/about image.png" alt="">
               </div>
             </div>
-            
           </div>
-        </div>
-
-        <div class="row">  <div class="col d-flex flex-column justify-content-center  m-4">
-          <h5 class="fw-bold" style="color: #000000;">The Team</h5>
-          <p style="color: #686D76;" class="mt-3 fw-normal ">
-            At the heart of Jk Global IT Solutions lies its dedicated team, driving operations and achieving outcomes. With roles spanning sales, support, development, project management, administration, and accounts, our team collaborates tirelessly to ensure the success of our clients. We aim to lead by example in business ethics and are committed to fostering a unique environment that champions high-quality business practices.
-          </p>
-         
-         
-          
-        </div></div>
-        
-        
-
-   
-
-       
+          <!-- Banner section -->
+      
+          <!-- Content Section -->
+          <div class="content container my-5">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                <h5 class="fw-bold" style="color: #000000;">The Company</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  Founded in 2023 as a website development agency, JK Global IT Solutions Limited is a software development company based in Tiruvannamalai, India. With the goal of empowering its clients and team to succeed, the company evolved into a brand, JK Global IT Solutions, offering a variety of web solutions.
+                </p>
+                <center><h5 class="fw-bold" style="color: #D21312;">"Where Mastery Meets Distinction"</h5></center>
+                <p class="fw-normal" style="color: #686D76;">
+                  As our experience expanded through various client engagements and projects, our capabilities and proficiency flourished. Guided by our accumulated expertise, we envisioned delivering exceptional service to our clients, ensuring excellence in every aspect of our offerings, including delivery, support, and solutions. Our mission is to empower businesses, enabling them to achieve remarkable success.
+                  <br><br>
+                  JK Global IT Solution was established with the idea of providing compete IT Consulting Services to various across the globe.
+                  <br><br>
+                  We believe in mapping people and Services with organizations as per the “Capability & Opportunity Fit” concept that will take the business to newer horizons. We trust in providing customized solutions to your company as we understand that each client has their specific needs. A capable team of professionals helps in providing solutions efficiently and quickly.
+                  <br><br>
+                  At JK Global IT Solution, we are committed to excellence and customer satisfaction. Our team of skilled professionals works diligently to deliver solutions that not only meet but exceed your expectations.
+                </p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./images/Computer png (1).png" alt="Computer Image">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-12 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                <h5 class="fw-bold" style="color: #000000;">MD & CEO</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  The CEO and founder of JK Global IT Solution began with just seven staff members and has since expanded to include a fully certified team serving more than 150+ clients worldwide.
+                  <br><br>
+                  His goal has always been to unearth the fundamental principles of "Life and Growth," developing new techniques and processes, keeping an eye on the work, and leading the group toward the realization of a contented business with contented customers.
+                </p>
+              </div>
+            </div>
+      
+            <div class="row align-items-center justify-content-center gx-1">
+              <div class="col-12 d-flex flex-column flex-md-row align-items-center">
+                <div class="d-flex flex-wrap flex-sm-nowrap align-items-center mb-3 mb-md-0" style="gap: 30px;">
+                  <img src="./images/Rectangle 59.png" alt="" class="d-none d-sm-block">
+                  <img src="./images/Frame 805.png" alt="">
+                </div>
+                <div class="col d-flex flex-column mt-3 mt-md-0">
+                  <h1 class="">VISION</h1>
+                  <p>"Known for its innovative solutions and exceptional client service, JK Global IT Solutions sets the 
+                    standard in web services with its cutting-edge technologies and commitment to exceeding
+                    customer expectations."</p>
+                  
+                  <h1 class="">MISSION</h1>
+                  <p>Our goal is to connect with as many businesses as possible, offering top-tier IT solutions through
+                    a robust and expansive network of skilled teams, all while ensuring client satisfaction and
+                    fostering a culture of happiness among our employees."</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-12 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                <h5 class="fw-bold" style="color: #000000;">The Team</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  At the heart of JK Global IT Solutions lies its dedicated team, driving operations and achieving outcomes. With roles spanning sales, support, development, project management, administration, and accounts, our team collaborates tirelessly to ensure the success of our clients. We aim to lead by example in business ethics and are committed to fostering a unique environment that champions high-quality business practices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Content Section -->
         </main>
+      
         <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
           <!-- place footer here -->
            <div class="row ">
