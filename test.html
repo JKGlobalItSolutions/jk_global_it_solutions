@@ -1,366 +1,645 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Jk Global Ir Solution</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-       <link rel="stylesheet" href="style.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+  <title>Jk Global Ir Solution</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body style="align-items: center;">
-        <header >
-          <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
-            <a href="/" class="px-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
-              <img src="./images/logo.png" height="40" alt="">
-            </a>
-          
-            <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
-              <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img src="./images/whatsapp_symbol.svg.png" alt=""></li>
-              <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img src="./images/call.png" alt=""><a href="#" class="nav-link text-dark">+8438438413</a></li>
-              <li class="nav-item"><a href="#" style="font-size: 10px;" class="nav-link text-light bg-danger px-3 me-2">Fast Query</a></li>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body style="align-items: center;" class=" m-0">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
+      <a href="/"
+        class="px-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
+        <img src="./images/logo.png" height="50" alt="">
+      </a>
+
+      <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
+        <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img
+            src="./images/whatsapp_symbol.svg.png" alt=""></li>
+        <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img src="./images/call.png"
+            alt=""><a href="#" class="nav-link text-dark">+8438438413</a></li>
+        <li class="nav-item"><a href="#" style="font-size: 10px;" class="nav-link text-light bg-danger px-3 me-2">Fast
+            Query</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Navbar -->
+    
+    
+ 
+    
+<!--  
+    
+    <style>
+      /* Basic styling for the dropdown */
+      .nav-item .dropdown-menu {
+        background-color: #f0ebe3;
+      }
+    
+      .dropdown-submenu .dropdown-menu {
+        background-color: #e0d7ce;
+      }
+    
+      .dropdown-menu .dropdown-item:hover {
+        background-color: #d1bfa7;
+        /* Change to the color you prefer */
+      }
+    
+      /* Show submenu on hover for non-mobile devices */
+      @media (min-width: 992px) {
+        .dropdown-submenu:hover .dropdown-menu {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          margin-top: -1px;
+        }
+      }
+    
+      /* Make submenu accessible on mobile devices */
+      @media (max-width: 991px) {
+        .dropdown-submenu>.dropdown-menu {
+          position: static;
+          float: none;
+          width: auto;
+          margin-top: 0;
+        }
+    
+        .dropdown-submenu>.dropdown-menu .dropdown-item {
+          padding-left: 2rem;
+          /* Indent sub-items for better readability */
+        }
+    
+        .dropdown-submenu>.dropdown-menu {
+          display: none;
+        }
+    
+        .dropdown-submenu.open>.dropdown-menu {
+          display: block;
+        }
+    
+        .dropdown-submenu>.dropdown-item:after {
+          content: '\25B6';
+          float: right;
+        }
+    
+        .dropdown-submenu.open>.dropdown-item:after {
+          content: '\25BC';
+        }
+      }
+    </style>
+    
+
+    
+    <style>
+      /* Show the top-level dropdown menu on hover */
+      .nav-item:hover>.dropdown-menu {
+        display: block;
+      }
+    
+      /* Ensure dropdown menu hides on click for top-level items */
+      .dropdown-menu {
+        display: none;
+      }
+    
+      /* Optional: Add a slight shadow to dropdown menu */
+      .dropdown-menu {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+    
+      /* Optional: Add a small delay to avoid flickering */
+      .nav-item {
+        position: relative;
+      }
+    
+      /* Styling for the submenu dropdown */
+      .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+      }
+    
+      /* Optional: Styling for hover effects */
+      .dropdown-item:hover {
+        background-color: #e0d7ce;
+      }
+    </style>
+    
+    <style>
+      /* Custom styles for the dropdown submenu */
+      .dropdown-submenu {
+        position: relative;
+      }
+    
+      .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        border-radius: 0 0.25rem 0.25rem 0.25rem;
+      }
+    
+      .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    
+      /* Ensure that submenu items are centered */
+      .dropdown-menu .dropdown-menu {
+        margin-left: 0.5rem;
+      }
+    </style> -->
+    <br>
+    <!-- Navbar -->
+  
+    <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link drop dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul style="background-color: #f0ebe3;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Web Design</a>
+                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                      <li><a class="dropdown-item pb-3 pt-3" href="businessweb.html">Business Web-Design</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="resweb.html">Responsive Web-Design</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="cmsweb.html">CMS Web-Design</a></li>
+                    </ul>
+                  </li>
+              
+                  <li>
+                    <a class="dropdown-item pb-3 pt-3" href="webmaintenance.html">Web Maintenance</a>
+                  </li>
+                  <li  class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Web Application</a>
+                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                      <li><a class="dropdown-item pb-3 pt-3" href="custtomweb.html">Custom Web Applications</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="matrimony.html">Matrimony Web Solutions</a></li>
+                    </ul>
+                  </li>
+              
+                  <li>
+                    <a class="dropdown-item pb-3 pt-3" href="mobileapp.html">Mobile Application</a>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Business Solution</a>
+                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                      <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and Cloud Solutions</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and Enterprise Email Solutions</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="google.html">Google Work Partner</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign Management Solutions</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="aws.html">AWS Services Implementations</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="design.html">Design and Branding Solutions</a></li>
+                      <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing & Social Media Solutions</a></li>
+                    </ul>
+                  </li>
+              
+                  <li>
+                    <a class="dropdown-item pb-3 pt-3" href="marketting.html">Marketing Support Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item pb-3 pt-3" href="webaudit.html">Website Auditing and Consulting Service</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item pb-3 pt-3" href="bpo.html">BPO</a>
+                  </li>
+                </ul>
+              </li>
+              <style>
+                /* Ensure dropdown menu appears on hover */
+              
+                
+                /* Hide second level submenus initially */
+                .dropdown-submenu .dropdown-menu {
+                  display: none;
+                }
+                .drop:hover{
+                    display: block;
+                }
+               
+                
+                /* Show second level submenu on hover */
+                .dropdown-submenu:hover .dropdown-menu {
+                  display: block;
+                }
+                
+                /* Optional: Adjust dropdown menu styles for mobile */
+                @media (max-width: 768px) {
+                  .dropdown-menu {
+                    display: block;
+                    position: static; /* Ensure dropdown is not fixed */
+                  }
+                }
+                </style>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Talent Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Contact</a>
+              </li>
             </ul>
           </div>
-          
-
-                <!-- Navbar -->
-                <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg container-fluid m-0">
-                  <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Service</a>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #f0ebe3;">
-                            <li class="dropdown-submenu position-relative">
-                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webdesign.html">Web Design</a>
-                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                                <li><a class="dropdown-item pt-3 pb-3" href="businessweb.html">Business Web-Design</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="resweb.html">Responsive Web-Design</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="cmsweb.html">CMS Web-Design Solution</a></li>
-                              </ul>
-                            </li>
-                            <style>
-                              .dropdown-submenu:hover .dropdown-menu {
-  display: block;
-  position: absolute; /* Make sure submenu is positioned correctly */
-  top: 100%; /* Adjust if necessary to align with the parent */
-  left: 0;
-}
-
-/* Optional: Add a slight shadow for better visual effects */
-.dropdown-menu {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
-
-/* Optional: Change background color on hover */
-.dropdown-menu .dropdown-item:hover {
-  background-color: #d1bfa7; /* Change to the color you prefer */
-}
-                            </style>
-
-
-                            <li><a class="dropdown-item pt-3 pb-3" href="webmaintenance.html">Web Maintenance</a></li>
-                            <li class="dropdown-submenu position-relative">
-                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webapp.html">Web Application</a>
-                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                                <li><a class="dropdown-item pt-3 pb-3" href="custtomweb.html">Custom Web Applications</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="matrimony.html">Matrimony Web Solutions</a></li>
-                              </ul>
-                            </li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="mobileapp.html">Mobile Application</a></li>
-                            <li class="dropdown-submenu position-relative">
-                              <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="businesssol.html">Business Solutions</a>
-                              <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                                <li><a class="dropdown-item pt-3 pb-3" href="domains.html">Dominas, Hosting and Cloud</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="personal.html">Personal and Enterprise Email</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="google.html">Google Apps and Services</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="email.html">Email Campaign Management</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="aws.html">AWS Services Implementations</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="design.html">Design and Branding</a></li>
-                                <li><a class="dropdown-item pt-3 pb-3" href="digital.html">Digital Marketing and Social Media</a></li>
-                              </ul>
-                            </li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="marketting.html">Marketing Support Services</a></li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service</a></li>
-                            <li><a class="dropdown-item pt-3 pb-3" href="bpo.html">BPO</a></li>
-                          </ul>
-                        </li>
-                        <style>
-                          /* Show the top-level dropdown menu on hover */
-                          .nav-item:hover > .dropdown-menu {
-                            display: block;
-                          }
-                      
-                          /* Ensure dropdown menu hides on click for top-level items */
-                          .dropdown-menu {
-                            display: none;
-                          }
-                      
-                          /* Optional: Add a slight shadow to dropdown menu */
-                          .dropdown-menu {
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                          }
-                      
-                          /* Optional: Add a small delay to avoid flickering */
-                          .nav-item {
-                            position: relative;
-                          }
-                      
-                          /* Styling for the submenu dropdown */
-                          .dropdown-submenu:hover > .dropdown-menu {
-                            display: block;
-                            position: absolute;
-                            top: 0;
-                            left: 100%;
-                            margin-top: -1px;
-                          }
-                      
-                          /* Optional: Styling for hover effects */
-                          .dropdown-item:hover {
-                            background-color: #e0d7ce;
-                          }
-                        </style>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="talent.html"> Talent Management</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-
-                <style>
-                   /* Custom styles for the dropdown submenu */
-    .dropdown-submenu {
-      position: relative;
-    }
-
-    .dropdown-submenu .dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: -1px;
-      border-radius: 0 0.25rem 0.25rem 0.25rem;
-    }
-
-    .dropdown-submenu:hover > .dropdown-menu {
-      display: block;
-    }
-
-    /* Ensure that submenu items are centered */
-    .dropdown-menu .dropdown-menu {
-      margin-left: 0.5rem;
-    }
-                </style>
-       <!-- Navbar -->
-           
-        </header>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              // Enable dropdowns
+              var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+              var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+                return new bootstrap.Dropdown(dropdownToggleEl)
+              })
         
-        <main >
-        <!-- Banner section -->
-        <div class="banner container-fluid" style="background-image: url(./images/Rectangle\ 27.png); height: 400px;">
-          <div class="row h-100">
-            <div class=" col d-flex justify-content-center align-items-center text-light">
-              <h2 style="font-size: 30px; color: black;" class="fw-bolder">Business Solution
-                <br>
-                <!-- <p class="h6 fw-bold">"Make a global impact with your innovative thinking"</p> -->
-              </h2>
-              
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              <img class="img-fluid" src="./images/bis sol image 1'.png" alt="">
-            </div>
+              // Enable sub-dropdowns
+              var subDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-submenu .dropdown-toggle'))
+              subDropdownElementList.forEach(function(el) {
+                el.addEventListener('click', function (e) {
+                  e.stopPropagation();
+                  var submenu = el.nextElementSibling;
+                  if (submenu.classList.contains('show')) {
+                    submenu.classList.remove('show');
+                  } else {
+                    submenu.classList.add('show');
+                  }
+                });
+              });
+        
+              // Close sub-dropdown when parent is closed
+              var mainDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'))
+              mainDropdownElementList.forEach(function(el) {
+                el.addEventListener('hidden.bs.dropdown', function () {
+                  var submenus = el.querySelectorAll('.dropdown-menu.show');
+                  submenus.forEach(function(submenu) {
+                    submenu.classList.remove('show');
+                  });
+                });
+              });
+            });
+          </script>
+          <style>
+            /* Style for sub-dropdown */
+            .dropdown-submenu {
+              position: relative;
+            }
+            .dropdown-submenu .dropdown-menu {
+              top: 0;
+              left: 100%;
+              margin-left: 0.1rem;
+              margin-right: 0.1rem;
+            }
+          </style>
+      </nav>
+      
+      
+  </header>
+
+
+  <main>
+    <!-- Banner section -->
+    <div class="banner container-fluid d-flex align-items-center">
+      <div class="row w-100">
+        <div
+          class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light text-center text-lg-left">
+          <div>
+            <h2 class="fw-bold">Mobile Application</h2>
+            <p class="h6 fw-bold">"Make a global impact with your innovative thinking"</p>
           </div>
         </div>
-        <!-- Banner section -->
-         <!-- Content  Section-->
-        
-         
-
-        <div class="content container-fluid">
-            <div class="row h-100 justify-content-center align-items-center ">
-              <div class="col d-flex flex-column justify-content-center p-4">
-             
-            
-               <p>In addition to design and development services, we provide specific business, corporate, and enterprise solutions. JK Global IT Solutions has partnered with key solution providers such as Google, Amazon Web Services, and Microsoft, as well as leading market hosting and cloud vendors such as IBM and CTRLS. With this technology relationship, our expertise, and support knowledge, we can consult and create adaptable business solutions to meet your demands.
-                With our experience gained via technological growth, we can point our customers in the proper path and recommend the best solution.
-
-                <br><br>
-                JK Global IT Solutions offers specialized Corporate Solutions tailored to meet company needs, focusing on maximizing efficiency and supporting growth. Their services include cloud solutions, software development, cybersecurity, IT infrastructure management, and consulting. They aim to deliver reliable, scalable solutions that enhance corporate performance and competitiveness.
-                <br><br>
-                JK Global IT Solutions offers a variety of business support services designed to enhance productivity and achieve goals. These include IT infrastructure management, software solutions, cybersecurity, technical assistance, and strategic consultancy. Their aim is to boost corporate efficiency and competitiveness with reliable and effective services.
-               </p>
-              </div>
-              <div class="col d-flex flex-column justify-content-center p-4">
-              <img class="" src="./images/bis sol image 2.png" alt="">
-           
-              </div>
-              
-            </div>
-           
-          </div>
-
-        
-
-            <br><br><br>
-           
-              <h1 style="color: #686D76; text-align: center;">Prime Commercial Services</h1>
-              <br> <br><br>
-              <div class="row justify-content-center gx-3 p-4">
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    AWS Servcies Implementations
-                  </span>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    Digital Marketing and Social Media                  </span>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    Design and Branding
-                  </span>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    Dominas, HGosting and Cloud
-                  </span>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    Personal and Enterprise Email
-                  </span>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                  <span class="box">
-                    <img src="./images/trip.png" alt="" class="me-2">
-                    Google Apps and Services
-                  </span>
-                </div>
-              </div>
-     
-          
-
-
-       <br><br>
-       
-        </main>
-        <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
-          <!-- place footer here -->
-           <div class="row ">
-            <div  class="col-12 col-lg-3 col-md-3">
-              <h6 style="font-weight: 400;">About</h6>
-              <h6 style="font-weight: 400;">Contact</h6>
-              <h6 style="font-weight: 400;">Payment Options</h6>
-              <h6 style="font-weight: 400;">Testimonials</h6>
-              <h6 style="font-weight: 400;">Blog</h6>
-              <h6 style="font-weight: 400;">Careers</h6>
-              <h6 style="font-weight: 400;">FAQ</h6>
-              <h6 style="font-weight: 400;">Feedback</h6>
-              <h6 style="font-weight: 400;">Clients</h6>
-            </div>
-            <div class="col-12 col-lg-3 col-md-3">
-              <h6 style="font-weight: 400;">Responsive Web Design</h6>
-              <h6 style="font-weight: 400;">Web Design</h6>
-              <h6 style="font-weight: 400;">Web Maintenance</h6>
-              <h6 style="font-weight: 400;">Custom Web Applications</h6>
-              <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
-              <h6 style="font-weight: 400;">Business Web Design </h6>
-              <h6 style="font-weight: 400;">CMS Web Design</h6>
-              <h6 style="font-weight: 400;">Web Application</h6>
-              <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
-            </div>
-            <div class="col-12 col-lg-3 col-md-3">
-              <h6 style="font-weight: 400;">Business Solutions</h6>
-              <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
-              <h6 style="font-weight: 400;">Google Work Partner</h6>
-              <h6 style="font-weight: 400;">AWS Services Implementations</h6>
-              <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
-              <h6 style="font-weight: 400;">Mobile Applications </h6>
-              <h6 style="font-weight: 400;">Marketing Support Services</h6>
-              <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
-              <h6 style="font-weight: 400;">Email Campaign Management</h6>
-            </div>
-            
-            <div style="line-height: 5px;" class="col-12 col-lg-3 col-md-3 ">
-              <br><br>
-                <a href=""> <center><img  style="margin-bottom: 10px;" height="80px
-                  " src="./images/New Logo 2.png" alt=""></center>  </a> 
-                  <br> 
-                  
-             <a href=""><center> <img class="img-fluid" height="20px" src="./images/Frame 496.png" alt=""></center> </a>    
-             <br>
-                 
-             <a href=""><center><img class="img-fluid" src="./images/Frame 13.png" alt=""></center></a>    
-             <br> <br>
-                 
-             <a href=""> <center><img class="img-fluid" src="./images/Frame 14.png" alt=""></center></a>  
-             <br> <br>
-                 
-                <div style="column-gap: 5px;" class="d-flex justify-content-center align-items-center ">
-                  <center><img class="img-fluid" src="./images/Symbol.svg.png" alt=""></center>
-                  <center><img class="img-fluid" src="./images/Frame 499.png" alt=""></center>
-                  <center><img class="img-fluid" src="./images/Frame 497.png" alt=""></center>
-                  <center><img class="img-fluid" src="./images/Frame 500.png" alt=""></center>
-                </div>
-              
-              
-            </div>
-           </div>
-       
-           
-         
-      </footer>
-      <div style="background-color: #d21312;" class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
-        <p  class="mb-0"><b>&copy;  2024 JK Global IT Solutions.</b></p>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid" src="./images/cuate.png" alt="">
+        </div>
       </div>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    </div>
+    <!-- Banner section -->
+    <!-- Content  Section-->
+    <div class="content container my-5">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-4 mb-md-0">
+          <h5 class="fw-bold" style="color: #D21312;">WEB DEVELOPMENT COMPANY IN TIRUVANNAMALAI</h5>
+          <p style="color: #686D76;" class="mt-3 fw-normal">
+            JK Global IT Solutions, based in Tiruvannamalai, India, is a professional web development firm offering
+            comprehensive design, development, and deployment services to businesses across various scales. Established
+            in 2023 as a burgeoning software development entity in Tiruvannamalai, our company has since expanded
+            significantly in both scope and expertise, evolving into the esteemed brand known today as 'JK Global IT
+            Solutions'. We specialize in delivering a diverse range of high-quality solutions and services that empower
+            businesses to thrive.
+          </p>
+          <h5 class="fw-bold" style="color: #D21312;">Software Development</h5>
+          <p class="fw-normal" style="color: #686D76;">
+            Furthermore, our web development services are tailored to meet the unique needs of our clients, promising to
+            leave them satisfied. Contact us today to discover how we can assist you with your specific requirements and
+            leave you delighted with our solutions.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid" src="./images/Computer png (1).png" alt="Computer Image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h5 class="fw-bold" style="color: #D21312;">Economical Website Design Firm</h5>
+          <p style="color: #686D76;" class="mt-3 fw-normal">
+            JK Global IT Solutions stands as a cost-effective web design firm in Tiruvannamalai, boasting years of
+            expertise in crafting compelling websites. Our team comprises top-tier professionals dedicated to delivering
+            precisely what you envision. Modern web design and development have evolved beyond basic elements like
+            images and text on a homepage. Today, it's about crafting a seamless user experience. Clients now seek more
+            than just a website; they require a partner who can foster business growth. As a budget-friendly web design
+            company, we not only create websites but also offer comprehensive support in content creation and marketing.
+            Our goal is to ensure your site not only attracts traffic but also converts leads effectively.
+          </p>
+          <p style="color: #686D76;" class="mt-3 fw-normal">
+            Here we offers competitively priced website design solutions utilizing cutting-edge technologies such as
+            WordPress and the Bootstrap framework. These platforms are user-friendly, empowering users to manage their
+            websites effortlessly, even without technical coding skills. Our commitment lies in delivering
+            cost-effective web design services that leverage modern tools to ensure simplicity and functionality, making
+            it accessible for all clients to maintain and update their online presence seamlessly.
+          </p>
+          <h5 class="fw-bold" style="color: #D21312;">Website Design Services in Tiruvannamalai</h5>
+          <p class="fw-normal" style="color: #686D76;">
+            In Tiruvannamalai, JK Global IT Solutions excels in delivering exceptional website design services. We blend
+            advanced technologies with timeless creativity to offer unparalleled web design solutions to our clientele.
+            At JK Global IT Solutions, we specialize in tailor-made website designs that align perfectly with your
+            business objectives. Our seasoned professionals bring years of expertise, crafting effective online
+            marketing strategies tailored to your business needs. Whether it's logo and banner design, e-commerce
+            solutions, web hosting, domain registration, or comprehensive web development, we provide a comprehensive
+            suite of services under one roof at affordable rates, ensuring all your online business needs are met
+            seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Content  Section-->
+    <!-- Service Section -->
+    <div class="container-fluid py-5" style="background-color: #f1f1f1;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <center>
+              <h1 class="fw-bold" style="color: #000000;">OUR DIGITAL SERVICES</h1>
+            </center>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <img class="img-fluid custom-img" src="./images/Rectangle 10.png" alt="Rectangle Image">
+          </div>
+        </div>
+        <div class="row text-center mt-5">
+          <div class="col-12 col-md-4">
+            <img src="./images/brush.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Web Maintenance</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              JK Global IT Solutions offers website maintenance services designed to keep your website running smoothly
+              and up-to-date. Our comprehensive service includes regular updates and thorough error checks to ensure
+              your visitors enjoy a seamless user experience. By choosing our website maintenance service, you can
+              reclaim valuable time to concentrate on other business priorities. Our team of skilled professionals
+              handles all technical aspects, providing assurance that your website is well-maintained and functioning
+              optimally.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/build.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Web Design</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              JK Global IT Solution is a leading web design firm in Tiruvannamalai, known for its talented team of
+              designers who have extensive experience with prominent local brands. We specialize in creating visually
+              appealing, responsive websites for businesses of all sizes across various sectors such as real estate,
+              healthcare, IT, and education. From established enterprises to startups, JK Global IT Solution delivers
+              exceptional websites tailored to meet your specific needs and budget, ensuring a perfect fit for your
+              requirements.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/laptop_mac.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Web Application</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              At JK Global IT Solutions, we specialize in crafting customized web applications for businesses of all
+              sizes. Our certified developers create bespoke solutions tailored to meet your specific needs. Contact us
+              today to learn more about our cost-effective and versatile web applications built on open-source
+              technologies. We excel in developing everything from simple CMS to complex e-commerce platforms and
+              personalized ERP solutions.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center mt-5">
+          <div class="col-12 col-md-4">
+            <img src="./images/thumb_up.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Business Solutions</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              JK Global IT Solution offers a wide range of business solutions to boost efficiency and productivity. Our
+              cloud hosting and maintenance services provide fast, secure, and scalable solutions tailored to meet
+              client needs. We manage business email systems for seamless operation and offer effective bulk email
+              campaign solutions. Our Google and AWS services provide powerful cloud tools for collaboration, data
+              management, and application development. Additionally, we offer domain registration and hosting to
+              establish and maintain online presence. Count on us for reliable, high-quality services that help
+              businesses succeed.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/smartphone.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Mobile Applications</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              JK Global IT Solution offers advanced mobile app development services to keep businesses competitive in
+              today's mobile-driven landscape. We specialize in creating tailored mobile apps that precisely meet client
+              needs, using cutting-edge technology and best practices to deliver high-quality, user-friendly
+              experiences. Whether for iOS, Android, or cross-platform use, we collaborate closely with clients to
+              ensure our final products exceed industry standards. From initial concept to rigorous testing and
+              deployment, our comprehensive development process ensures innovative, scalable, and affordable solutions
+              that drive business success.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/person.png" alt="">
+            <h5 class="fw-bold" style="color: #D21312;">Digital Marketing and Social Media Solutions</h5>
+            <p style="color: #686D76;" class="mt-3 fw-normal">
+              Looking to boost your business with digital marketing or social media expertise? JK Global IT Solutions
+              offers tailored services to drive online growth. From SEO and social media management to targeted
+              pay-per-click campaigns, we provide customized solutions. As social media optimization specialists, we
+              enhance visibility and engage with your audience on platforms like Facebook, Twitter, LinkedIn, and
+              Pinterest. With proven digital marketing techniques, we effectively promote your brand and foster
+              meaningful interactions online. Trust JK Global IT Solutions to achieve your digital marketing and social
+              media goals efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Section -->
+    <!-- Reliable Section -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="fw-bold" style="color: #D21312;">Reliable Application Development Firm in Tiruvannamalai</h5>
+          <p style="color: #686D76;" class="mt-3 fw-normal">
+            JK Global IT Solution is a leading application development firm based in Tiruvannamalai specializing in
+            creating efficient and user-friendly web and mobile applications for businesses of all scales. With
+            extensive experience, our team offers consulting, design, development, implementation, and maintenance
+            services across various application types. We excel in delivering custom-built systems that can be deployed
+            either on-site or in the cloud, providing remote accessibility from any device with internet connectivity.
+            Collaborate with us to elevate your business using our dependable and cutting-edge application development
+            solutions.
+          </p>
+          <h5 class="fw-bold" style="color: #D21312;">Website Design Services in Tiruvannamalai</h5>
+          <p class="fw-normal" style="color: #686D76;">
+            In Tiruvannamalai, JK Global IT Solutions excels in delivering exceptional website design services. We blend
+            advanced technologies with timeless creativity to offer unparalleled web design solutions to our clientele.
+            At JK Global IT Solutions, we specialize in tailor-made website designs that align perfectly with your
+            business objectives. Our seasoned professionals bring years of expertise, crafting effective online
+            marketing strategies tailored to your business needs. Whether it's logo and banner design, e-commerce
+            solutions, web hosting, domain registration, or comprehensive web development, we provide a comprehensive
+            suite of services under one roof at affordable rates, ensuring all your online business needs are met
+            seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Reliable Section -->
+    <!-- Choose -->
+    <div class="container text-center my-5">
+      <h1 class="fw-bolder" style="color: #D21312;">Why Choose Us?</h1>
+      <p class="w-75 mx-auto" style="color: #686D76;">
+        Ultimately, our commitment to our core values and our mission to empower clients with effective solutions have
+        been instrumental in shaping our success. This steadfast dedication enables us to maintain our clients' trust
+        and consistently deliver exceptional results. Our skilled experts, coupled with well-established processes and
+        protocols, allow us to deliver efficient business support consistently across all levels. Above all, we
+        prioritize our clients and their technological investments. As the top software development company in
+        Tiruvannamalai, we dedicate ourselves to delivering the highest quality results and ensuring our clients'
+        satisfaction.
+      </p>
+    </div>
+    <!-- Choose -->
+  </main>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+
+  <style>
+    .banner {
+      background-image: url(./images/Rectangle%203.jpg);
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .custom-img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+
+  <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
+    <!-- place footer here -->
+    <div class="row ">
+      <div class="col-12 col-lg-3 col-md-3">
+        <h6 style="font-weight: 400;">About</h6>
+        <h6 style="font-weight: 400;">Contact</h6>
+        <h6 style="font-weight: 400;">Payment Options</h6>
+        <h6 style="font-weight: 400;">Testimonials</h6>
+        <h6 style="font-weight: 400;">Blog</h6>
+        <h6 style="font-weight: 400;">Careers</h6>
+        <h6 style="font-weight: 400;">FAQ</h6>
+        <h6 style="font-weight: 400;">Feedback</h6>
+        <h6 style="font-weight: 400;">Clients</h6>
+      </div>
+      <div class="col-12 col-lg-3 col-md-3">
+        <h6 style="font-weight: 400;">Responsive Web Design</h6>
+        <h6 style="font-weight: 400;">Web Design</h6>
+        <h6 style="font-weight: 400;">Web Maintenance</h6>
+        <h6 style="font-weight: 400;">Custom Web Applications</h6>
+        <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
+        <h6 style="font-weight: 400;">Business Web Design </h6>
+        <h6 style="font-weight: 400;">CMS Web Design</h6>
+        <h6 style="font-weight: 400;">Web Application</h6>
+        <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
+      </div>
+      <div class="col-12 col-lg-3 col-md-3">
+        <h6 style="font-weight: 400;">Business Solutions</h6>
+        <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
+        <h6 style="font-weight: 400;">Google Work Partner</h6>
+        <h6 style="font-weight: 400;">AWS Services Implementations</h6>
+        <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
+        <h6 style="font-weight: 400;">Mobile Applications </h6>
+        <h6 style="font-weight: 400;">Marketing Support Services</h6>
+        <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
+        <h6 style="font-weight: 400;">Email Campaign Management</h6>
+      </div>
+
+      <div style="line-height: 5px;" class="col-12 col-lg-3 col-md-3 ">
+        <br><br>
+        <a href="">
+          <center><img style="margin-bottom: 10px;" height="80px
+                    " src="./images/New Logo 2.png" alt=""></center>
+        </a>
+        <br>
+
+        <a href="">
+          <center> <img class="img-fluid" height="20px" src="./images/Frame 496.png" alt=""></center>
+        </a>
+        <br>
+
+        <a href="">
+          <center><img class="img-fluid" src="./images/Frame 13.png" alt=""></center>
+        </a>
+        <br> <br>
+
+        <a href="">
+          <center><img class="img-fluid" src="./images/Frame 14.png" alt=""></center>
+        </a>
+        <br> <br>
+
+        <div style="column-gap: 5px;" class="d-flex justify-content-center align-items-center ">
+          <center><img class="img-fluid" src="./images/Symbol.svg.png" alt=""></center>
+          <center><img class="img-fluid" src="./images/Frame 499.png" alt=""></center>
+          <center><img class="img-fluid" src="./images/Frame 497.png" alt=""></center>
+          <center><img class="img-fluid" src="./images/Frame 500.png" alt=""></center>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </footer>
+  <div style="background-color: #d21312;"
+    class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
+    <p class="mb-0"><b>&copy; 2024 JK Global IT Solutions.</b></p>
+  </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

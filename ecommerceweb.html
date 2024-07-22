@@ -33,153 +33,160 @@
         </div>
 
         <!-- Navbar -->
-        <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg container-fluid m-0">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Service</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #f0ebe3;">
-                      <li class="dropdown-submenu position-relative">
-                        <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webdesign.html">Web Design</a>
-                        <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                          <li><a class="dropdown-item pt-3 pb-3" href="businessweb.html">Business Web-Design</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="resweb.html">Responsive Web-Design</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="cmsweb.html">CMS Web-Design Solution</a></li>
-                        </ul>
-                      </li>
-                      <style>
-                        .dropdown-submenu:hover .dropdown-menu {
-display: block;
-position: absolute; /* Make sure submenu is positioned correctly */
-top: 100%; /* Adjust if necessary to align with the parent */
-left: 0;
-}
-
-/* Optional: Add a slight shadow for better visual effects */
-.dropdown-menu {
-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-transition: all 0.3s ease;
-}
-
-/* Optional: Change background color on hover */
-.dropdown-menu .dropdown-item:hover {
-background-color: #d1bfa7; /* Change to the color you prefer */
-}
-                      </style>
-
-
-                      <li><a class="dropdown-item pt-3 pb-3" href="webmaintenance.html">Web Maintenance</a></li>
-                      <li class="dropdown-submenu position-relative">
-                        <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="webapp.html">Web Application</a>
-                        <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                          <li><a class="dropdown-item pt-3 pb-3" href="custtomweb.html">Custom Web Applications</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="matrimony.html">Matrimony Web Solutions</a></li>
-                        </ul>
-                      </li>
-                      <li><a class="dropdown-item pt-3 pb-3" href="mobileapp.html">Mobile Application</a></li>
-                      <li class="dropdown-submenu position-relative">
-                        <a class="dropdown-item pt-3 pb-3 dropdown-toggle" href="businesssol.html">Business Solutions</a>
-                        <ul class="dropdown-menu" style="background-color: #e0d7ce;">
-                          <li><a class="dropdown-item pt-3 pb-3" href="domains.html">Dominas, Hosting and Cloud</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="personal.html">Personal and Enterprise Email</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="google.html">Google Apps and Services</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="email.html">Email Campaign Management</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="aws.html">AWS Services Implementations</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="design.html">Design and Branding</a></li>
-                          <li><a class="dropdown-item pt-3 pb-3" href="digital.html">Digital Marketing and Social Media</a></li>
-                        </ul>
-                      </li>
-                      <li><a class="dropdown-item pt-3 pb-3" href="marketting.html">Marketing Support Services</a></li>
-                      <li><a class="dropdown-item pt-3 pb-3" href="webaudit.html">Website Auditing and Consulting Service</a></li>
-                      <li><a class="dropdown-item pt-3 pb-3" href="bpo.html">BPO</a></li>
-                    </ul>
-                  </li>
-                  <style>
-                    /* Show the top-level dropdown menu on hover */
-                    .nav-item:hover > .dropdown-menu {
+        <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
+                <li class="nav-item">
+                  <a class="nav-link  " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link drop dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul style="background-color: #f0ebe3;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Web Design</a>
+                      <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                        <li><a class="dropdown-item pb-3 pt-3" href="businessweb.html">Business Web-Design</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="resweb.html">Responsive Web-Design</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="cmsweb.html">CMS Web-Design</a></li>
+                      </ul>
+                    </li>
+                
+                    <li>
+                      <a class="dropdown-item pb-3 pt-3" href="webmaintenance.html">Web Maintenance</a>
+                    </li>
+                    <li  class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Web Application</a>
+                      <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                        <li><a class="dropdown-item pb-3 pt-3" href="custtomweb.html">Custom Web Applications</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="matrimony.html">Matrimony Web Solutions</a></li>
+                      </ul>
+                    </li>
+                
+                    <li>
+                      <a class="dropdown-item pb-3 pt-3" href="mobileapp.html">Mobile Application</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="#">Business Solution</a>
+                      <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                        <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and Cloud Solutions</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and Enterprise Email Solutions</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="google.html">Google Work Partner</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign Management Solutions</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="aws.html">AWS Services Implementations</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="design.html">Design and Branding Solutions</a></li>
+                        <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing & Social Media Solutions</a></li>
+                      </ul>
+                    </li>
+                
+                    <li>
+                      <a class="dropdown-item pb-3 pt-3" href="marketting.html">Marketing Support Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item pb-3 pt-3" href="webaudit.html">Website Auditing and Consulting Service</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item pb-3 pt-3" href="bpo.html">BPO</a>
+                    </li>
+                  </ul>
+                </li>
+                <style>
+                  /* Ensure dropdown menu appears on hover */
+                
+                  
+                  /* Hide second level submenus initially */
+                  .dropdown-submenu .dropdown-menu {
+                    display: none;
+                  }
+                  .drop:hover{
                       display: block;
-                    }
-                
-                    /* Ensure dropdown menu hides on click for top-level items */
+                  }
+                 
+                  
+                  /* Show second level submenu on hover */
+                  .dropdown-submenu:hover .dropdown-menu {
+                    display: block;
+                  }
+                  
+                  /* Optional: Adjust dropdown menu styles for mobile */
+                  @media (max-width: 768px) {
                     .dropdown-menu {
-                      display: none;
-                    }
-                
-                    /* Optional: Add a slight shadow to dropdown menu */
-                    .dropdown-menu {
-                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                    }
-                
-                    /* Optional: Add a small delay to avoid flickering */
-                    .nav-item {
-                      position: relative;
-                    }
-                
-                    /* Styling for the submenu dropdown */
-                    .dropdown-submenu:hover > .dropdown-menu {
                       display: block;
-                      position: absolute;
-                      top: 0;
-                      left: 100%;
-                      margin-top: -1px;
+                      position: static; /* Ensure dropdown is not fixed */
                     }
-                
-                    /* Optional: Styling for hover effects */
-                    .dropdown-item:hover {
-                      background-color: #e0d7ce;
-                    }
+                  }
                   </style>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="talent.html"> Talent Management</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Talent Management</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-
-
-          <style>
-             /* Custom styles for the dropdown submenu */
-.dropdown-submenu {
-position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-top: 0;
-left: 100%;
-margin-top: -1px;
-border-radius: 0 0.25rem 0.25rem 0.25rem;
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-display: block;
-}
-
-/* Ensure that submenu items are centered */
-.dropdown-menu .dropdown-menu {
-margin-left: 0.5rem;
-}
-          </style>
+          </div>
+          <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                // Enable dropdowns
+                var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+                var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+                  return new bootstrap.Dropdown(dropdownToggleEl)
+                })
+          
+                // Enable sub-dropdowns
+                var subDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-submenu .dropdown-toggle'))
+                subDropdownElementList.forEach(function(el) {
+                  el.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    var submenu = el.nextElementSibling;
+                    if (submenu.classList.contains('show')) {
+                      submenu.classList.remove('show');
+                    } else {
+                      submenu.classList.add('show');
+                    }
+                  });
+                });
+          
+                // Close sub-dropdown when parent is closed
+                var mainDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'))
+                mainDropdownElementList.forEach(function(el) {
+                  el.addEventListener('hidden.bs.dropdown', function () {
+                    var submenus = el.querySelectorAll('.dropdown-menu.show');
+                    submenus.forEach(function(submenu) {
+                      submenu.classList.remove('show');
+                    });
+                  });
+                });
+              });
+            </script>
+            <style>
+              /* Style for sub-dropdown */
+              .dropdown-submenu {
+                position: relative;
+              }
+              .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-left: 0.1rem;
+                margin-right: 0.1rem;
+              }
+            </style>
+        </nav>
 
         <!-- Navbar -->
 
@@ -189,7 +196,7 @@ margin-left: 0.5rem;
         <!-- Banner section -->
         <div class="banner container-fluid" style="background-image: url(./images/Rectangle\ 27.png); height: 400px;">
             <div class="row h-100">
-                <div class=" col d-flex justify-content-center align-items-center text-light">
+                <div class=" col-12 col-lg-6 d-flex justify-content-center align-items-center text-light">
                     <h2 style="font-size: 30px; color: black;" class="fw-bolder">E-Commerce 
                         Web Solutions
                         <br>
@@ -197,7 +204,7 @@ margin-left: 0.5rem;
                     </h2>
 
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                     <img class="img-fluid" src="./images/e commerce image 1.png" alt="">
                 </div>
             </div>
