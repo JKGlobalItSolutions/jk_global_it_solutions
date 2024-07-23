@@ -242,53 +242,341 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="container p-3 ">
+
+             
+              <div class="row justify-content-center align-items-center">
+               
+                  <div class="row  my-3 text-center">
+                    <h3 style="color: #D21312;font-weight: 700;">Why Choose JK Global IT Solutions?</h3>
+                  </div>
+                  <center>
+                    <div style="text-align: left;" class="col-12  ">
+                      <p><span style="color: #D21312;">Real-World Experience:</span>  Work on actual projects that impact our clients and the industry.</p>
+                       <p><span style="color: #D21312;">Mentorship</span>   Learn from experienced professionals who are eager to share their knowledge and guide you through your career development</p>
+                       <p><span style="color: #D21312;">Skill Development:</span> Enhance your technical and soft skills through comprehensive training and hands-on practice.</p>
+                       <p><span style="color: #D21312;">Networking Opportunities:</span> Build connections with industry professionals and fellow interns</p>
+                       <p><span style="color: #D21312;">Innovative Environment:</span>   Be part of a forward-thinking company that values creativity, innovation, and continuous improvement.</p>
+                   </div>
+                  </center>
+              </div>
+             
+            </div>
+            <div class="container text-center">
+              <h6 style="color: #D21312;">How to Apply</h6>
+              <p style="color: #686D76;">Ready to kickstart your career with JK Global IT Solutions? Visit our Website and submit your application. We look forward to welcoming you to our team!</p>
+            </div>
+
+
+            <div class="container p-5 ">
+                 <h1 class="text-center my-5 fw-bold text-danger">FORM FOR  INTERNSHIP </h1>
+                 <script>
+                  // Initialize EmailJS
+                  emailjs.init("VGvEND5sp-v3tZ6A-"); // Replace with your EmailJS User ID
+                
+                  document.addEventListener('DOMContentLoaded', function () {
+                    document.getElementById('applicationForm').addEventListener('submit', function (event) {
+                      event.preventDefault();
+                
+                      // Capture form data
+                      const formData = new FormData(event.target);
+                      const data = {};
+                      formData.forEach((value, key) => {
+                        data[key] = value;
+                      });
+                
+                      // Send email using EmailJS
+                      emailjs.send('service_jk37ps8', 'template_8dqtc9g', data)
+                        .then(function (response) {
+                          console.log('Success:', response);
+                        }, function (error) {
+                          console.error('Error:', error);
+                        });
+                
+                      // Send WhatsApp message
+                      const whatsappNumber = '9894924809'; // Include country code, e.g., '1234567890'
+                      const message = `
+                        Name: ${data['name']}
+                        Location: ${data['location']}
+                        Phone Number: ${data['phone']}
+                        Email Id: ${data['email']}
+                        Education: ${data['education']}
+                        Position: ${data['position']}
+                        Stream: ${data['stream']}
+                        Skills and Competencies: ${data['skills']}
+                        Projects: ${data['projects']}
+                      `;
+                      const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+                      window.open(whatsappURL, '_blank');
+                    });
+                  });
+                </script>
+
+
+              <form id="applicationForm" >
+             <div class="row col-12">
+           
+                  <div  class="col-12 col-lg-6">
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label px-4">Name</label> 
+                          </div>
+                          <div class="col-12 col-lg-9">
+                          <input type="text" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>                           
+                        </div>
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label px-4">Location</label> 
+                          </div>
+                          <div class="col-12 col-lg-9">
+                          <input type="text" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>                           
+                        </div>
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label px-4">Phone Number</label> 
+                          </div>
+                          <div class="col-12 col-lg-9">
+                          <input type="number" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>                           
+                        </div>
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label px-4">Email Id</label> 
+                          </div>
+                          <div class="col-12 col-lg-9">
+                          <input type="email" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>                           
+                        </div>
+                      
+                       
+                        
+                       
+                  </div>
+                  <div  class="col-12 col-lg-6">
+                    
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="positionSelect" class="form-label px-4">Education</label>
+                          </div>
+                          <div class="col-12 col-lg-9">
+                            <select class="form-select border-danger shadow custom-dropdown" id="positionSelect" aria-describedby="positionHelp">
+                              <option class="bg-danger text-light" value="" disabled selected>Select Education</option>
+                              <option class="bg-danger text-light " value="manager">Diploma</option>
+                              <option class="bg-danger text-light " value="manager">Bachelor's Degree</option>
+                              <option class="bg-danger text-light " value="manager">Master's Degree</option>
+                           
+                            </select>
+                          </div>
+                        </div>
+                        <script>
+                          document.addEventListener('DOMContentLoaded', function () {
+                              const streamSelect = document.getElementById('streamSelect');
+                              const subStreamSelect = document.getElementById('subStreamSelect');
+                  
+                              const subStreams = {
+                                  engineering: {
+                                      placeholder: 'Select Engineering Department Stream',
+                                      options: [
+                                          'Internship For CSE',
+                                          'Internship For IT',
+                                          'Internship For ECE',
+                                          'Internship For EEE',
+                                          'Internship For AI & DS',
+                                          'Internship For Biomedical',
+                                          'Internship For EIE',
+                                          'Internship For ICE',
+                                          'Internship For Civil',
+                                          'Internship For Mechanical',
+                                       
+                                      ]
+                                  },
+                                  mba: {
+                                      placeholder: 'Select MBA Specialization',
+                                      options: [
+                                          'MBA in Finance',
+                                          'MBA in Human Resurces Management',
+                                          'MBA in Marketing',
+                                          'MBA in Information Technology (IT)',
+                                          'MBA in Operation Management'
+                                          
+                                      ]
+                                  },
+                                  'arts-science': {
+                                      placeholder: 'Select Arts & Science Stream',
+                                      options: [
+                                          'Internship For BCA',
+                                          'Internship For MCA',
+                                          'Internship For B.SC',
+                                          'Internship For M.SC',
+                                          'Internship For B.COM',
+                                          'Internship For BBA ',
+                                       
+                                      ]
+                                  },
+                                  platform: {
+                                      placeholder: 'Select Platform Area',
+                                      options: [
+                                          'Internship in Web Development',
+                                          'Internship in Embedded Systems',
+                                          'Internship in IOT',
+                                          'Internship in JAVA',
+                                          'Internship in Android',
+                                          'Internship in DOTNET ',
+                                          'Internship in Cloud Computing',
+                                          'Internship in Bigdata',
+                                          'Internship in Artificial Intelligence AIDS',
+                                       
+                                      ]
+                                  }
+                              };
+                  
+                              streamSelect.addEventListener('change', function () {
+                                  const selectedStream = streamSelect.value;
+                                  const { placeholder, options } = subStreams[selectedStream] || { placeholder: 'Select Sub-Stream', options: [] };
+                  
+                                  // Update placeholder
+                                  subStreamSelect.innerHTML = `<option class="bg-danger text-light" value="" disabled selected>${placeholder}</option>`;
+                  
+                                  // Add new options
+                                  options.forEach(function (subStream) {
+                                      const option = document.createElement('option');
+                                      option.value = subStream;
+                                      option.textContent = subStream;
+                                      subStreamSelect.appendChild(option);
+                                  });
+                              });
+                          });
+                      </script>
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                              <label for="streamSelect" class="form-label px-4">Stream</label>
+                          </div>
+                          <div class="col-12 col-lg-9">
+                              <select class="form-select border-danger shadow custom-dropdown" id="streamSelect" aria-describedby="streamHelp">
+                                  <option class="bg-danger text-light" value="" disabled selected>Select Stream</option>
+                                  <option class="bg-danger text-light" value="engineering">Engineering Departments</option>
+                                  <option class="bg-danger text-light" value="mba">MBA</option>
+                                  <option class="bg-danger text-light" value="arts-science">Arts & Science Department</option>
+                                  <option class="bg-danger text-light" value="platform">Platform</option>
+                              </select>
+                          </div>
+                      </div>
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                              <label for="subStreamSelect" class="form-label px-4">Stream</label>
+                          </div>
+                          <div class="col-12 col-lg-9">
+                              <select class="form-select border-danger shadow custom-dropdown" id="subStreamSelect" aria-describedby="subStreamHelp">
+                                  <option class="bg-danger text-light" value="" disabled selected>Select Sub-Stream</option>
+                              </select>
+                          </div>
+                      </div>
+                      
+                        <div class="mb-3 d-flex row">
+                          <div class="col-12 col-lg-3">
+                            <label for="positionSelect" class="form-label px-4">Position</label>
+                          </div>
+                          <div class="col-12 col-lg-9">
+                            <select class="form-select border-danger shadow custom-dropdown" id="positionSelect" aria-describedby="positionHelp">
+                              <option class="bg-danger text-light" value="" disabled selected>Select a position</option>
+                              <option class="bg-danger text-light " value="manager">Full Stack Developer</option>
+                              <option class="bg-danger text-light" value="developer">Flutter Developer</option>
+                              <option class="bg-danger text-light" value="designer">Python Developer</option>
+                              <option class="bg-danger text-light" value="analyst">Dot Net Developer</option>
+                              <option class="bg-danger text-light" value="consultant">Java Developer</option>
+                              <option class="bg-danger text-light" value="administrator">Ux & UI Designer</option>
+                              <option class="bg-danger text-light" value="engineer">Digital Marketing</option>
+                              <option class="bg-danger text-light" value="intern">Team Leader</option>
+                              <option class="bg-danger text-light" value="coordinator">Project Manager</option>
+                              <option class="bg-danger text-light" value="specialist">Customer Support Executive</option>
+                              <option class="bg-danger text-light" value="specialist">Business Development Executive</option>
+                              <option class="bg-danger text-light" value="specialist">Marketing Manager</option>
+                              <option class="bg-danger text-light" value="specialist">Cloud Architect</option>
+                              <option class="bg-danger text-light" value="specialist">Internship Training</option>
+                              <option class="bg-danger text-light" value="specialist">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                       
+                        <style>
+                           .custom-dropdown option {
+    padding: 10px;
+    border-top: 1px solid #dc3545; /* Red color for top border */
+    border-bottom: 1px solid #dc3545; /* Red color for bottom border */
+  }
+  
+  .custom-dropdown {
+    padding: 10px;
+  }
+                        </style>
+                        
+                    
+                      
+                       
+
+
+
+
+
+
+                      
+                        
+                       
+                  </div>
+                  
+            
+                  <h6 class="d-block text-center col-12 col-lg-2 mt-4">Skills and Competencies</h6>
+              <div class="col-12 justify-content-center align-items-center d-flex my-5">
+                  
+                 <textarea  style="border: 1px solid #D21312; width: 100%; height: 200%;box-shadow:#D21312   1.95px 1.95px 2.6px;" name="" id=""></textarea>
+                </div>
+                  <h6 class="d-block text-center col-12 col-lg-1 mt-4">Projects</h6>
+              <div class="col-12 justify-content-center align-items-center d-flex my-5">
+                  
+                 <textarea  style="border: 1px solid #D21312; width: 100%; height: 200%;box-shadow:#D21312   1.95px 1.95px 2.6px;" name="" id=""></textarea>
+                </div>
+                <div class="mb-3 d-flex row my-4">
+                  <div class="col-12 col-lg-3">
+                    <label for="exampleInputEmail1" class="form-label px-4">Upload Your CV*</label> 
+                  </div>
+                  <div class="col-12 col-lg-9">
+                  <input type="file" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>                           
+                </div>
+                <div class="mb-3 d-flex row my-4">
+                  <div class="col-12 col-lg-3">
+                    <label for="exampleInputEmail1" class="form-label px-4">Upload Your Cover Letter*</label> 
+                  </div>
+                  <div class="col-12 col-lg-9">
+                  <input type="file" class="form-control border-danger shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>                           
+                </div>
+                 
+                
+                  <div class="col-12 justify-content-center align-items-center d-flex my-5">
+                      <button  type="submit" class="btn btn-danger">Submit</button>
+
+                  </div>
+               
+             </div>
+          </form>
+
+          
+             </div>
+           
+
      
 
-          <div class="container">
-            <h1 style="color: red;">WE ENSURE THE AFTERGOING</h1>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;   maintaining the uniqueness of your website.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;  Ensures seamless navigation and readability across devices, enhancing user satisfaction.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;  Updating the core and guaranteeing uptime and security will help you maintain your website and hosting.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;  In the event that a problem arises, offer prompt restoration support.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp; Providing responsive assistance for any issues or inquiries.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;  Improving your site's performance and user experience over time.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp; timely reminders and information regarding your hosting and domain.</p>
-            <p><i class="fa fa-circle-o" style="font-size:20px;color:red"></i> &nbsp;  assistance with mail servers, analytics, and hosting servers.</p>
-            <p style="color: white;">There are also advanced web maintenance services that include support for social media, digital marketing, 
-                and general website upkeep.</p>
-
-
-            <h1 style="color: #686D76; text-align: center;">Leading Web Design Firms</h1>
-            <br> <br><br>
-            <div class="row justify-content-center gx-3">
-              <div class="col-12 col-md-4 mb-3">
-                <span class="box">
-                  <img src="./images/trip.png" alt="" class="me-2">
-                  Business web-design
-                </span>
-              </div>
-              <div class="col-12 col-md-4 mb-3">
-                <span class="box">
-                  <img src="./images/trip.png" alt="" class="me-2">
-                  Responsive web-design
-                </span>
-              </div>
-              <div class="col-12 col-md-4 mb-3">
-                <span class="box">
-                  <img src="./images/trip.png" alt="" class="me-2">
-                  CMS Web-design solution
-                </span>
-              </div>
-            </div>
-            
-
-          </div>
-
+         
 
           
 
 
-       <br><br>
+    
        
         </main>
         <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">

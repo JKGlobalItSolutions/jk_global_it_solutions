@@ -310,66 +310,63 @@
 
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h1>Our Team Members</h1>
-          <div class="scroll">
-            <div class="m-scroll gap-5">
-             
-              <span><img class="img-fluid" src="./images/jagadish.png"></span>
-              <span><img class="img-fluid" src="./images/raj kumar.png"></span>
-              <span><img class="img-fluid" src="./images/dhakshana.png"></span>
-              <span><img class="img-fluid" src="./images/Sudharsan.png"></span>
-              <span><img class="img-fluid" src="./images/sharfudeen.png"></span>
-              <span><img class="img-fluid" src="./images/abdul.png"></span>
-              <span><img class="img-fluid" src="./images/sudharsanam.png"></span>
-              <span><img class="img-fluid" src="./images/maheshwari.png"></span>
-            </div>
-          </div>
-        </div>
+   
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <!-- Duplicate images for scrolling -->
+        <img src="./images/jagadish.png" alt="Image 1">
+        <img src="./images/raj kumar.png" alt="Image 1">
+        <img src="./images/dhakshana.png" alt="Image 1">
+        <img src="./images/sharfudeen.png" alt="Image 1">
+        <img src="./images/Sudharsan.png" alt="Image 1">
+        <img src="./images/abdul.png" alt="Image 1">
+        <img src="./images/maheshwari.png" alt="Image 1">
+        <img src="./images/sudharsanam.png" alt="Image 1">
+        <!-- Repeat images for scrolling -->
+        <img src="./images/jagadish.png" alt="Image 1">
+        <img src="./images/raj kumar.png" alt="Image 1">
+        <img src="./images/dhakshana.png" alt="Image 1">
+        <img src="./images/sharfudeen.png" alt="Image 1">
+        <img src="./images/Sudharsan.png" alt="Image 1">
+        <img src="./images/abdul.png" alt="Image 1">
+        <img src="./images/maheshwari.png" alt="Image 1">
+        <img src="./images/sudharsanam.png" alt="Image 1">
       </div>
     </div>
-    
     <style>
-      .scroll {
-        position: relative;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .scroll-container {
         width: 100%;
         overflow: hidden;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
       }
     
-      .m-scroll {
-        overflow: hidden;
+      .scroll-content {
         white-space: nowrap;
-        animation: scrollText 15s infinite linear;
-        font-size: 0;
-        display: flex;
+        animation: scroll 18s linear infinite; /* Adjust animation duration here */
       }
     
-      .m-scroll span {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-      }
-    
-      @keyframes scrollText {
-        from {
-          transform: translateX(0%);
-        }
-    
-        to {
-          transform: translateX(-100%);
-        }
-      }
-    
-      .img-fluid {
-        max-width: 100%;
+      .scroll-content img {
+        margin: 30px;
+        /* padding: 20px; */
+        width: 150px; /* Adjust image size */
         height: auto;
+        margin-right: var(--image-gap, 10px); /* Adjustable gap between images */
+        border-radius: 5px;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+      }
+    
+      @keyframes scroll {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(calc(-200px * 6)); } /* Adjust according to number of images */
       }
     </style>
+    
+
     
 
 
