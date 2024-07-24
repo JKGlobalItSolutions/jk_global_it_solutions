@@ -2,9 +2,7 @@
     color: red !important; /* Changes the text color to red */
   }
 
-  .navbar-nav .nav-item .nav-link.active::after {
-    background-color: red !important; /* Optional: Adds a red underline to indicate active state */
-  }
+
 
       /* Custom CSS for larger screens (laptops and above) */
       @media (min-width: 992px) {
