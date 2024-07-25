@@ -12,7 +12,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -39,7 +41,8 @@
     <!-- Navbar -->
     <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -51,7 +54,8 @@
               <a class="nav-link" aria-current="page" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Services
               </a>
               <ul style="background-color: #f0ebe3;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -80,13 +84,17 @@
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="businesssol.html">Business Solution</a>
                   <ul style="background-color: #f0ebe3;" class="dropdown-menu">
-                    <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and Cloud Solutions</a></li>
-                    <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and Enterprise Email Solutions</a></li>
+                    <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and Cloud Solutions</a>
+                    </li>
+                    <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and Enterprise Email
+                        Solutions</a></li>
                     <li><a class="dropdown-item pb-3 pt-3" href="google.html">Google Work Partner</a></li>
-                    <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign Management Solutions</a></li>
+                    <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign Management Solutions</a>
+                    </li>
                     <li><a class="dropdown-item pb-3 pt-3" href="aws.html">AWS Services Implementations</a></li>
                     <li><a class="dropdown-item pb-3 pt-3" href="design.html">Design and Branding Solutions</a></li>
-                    <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing & Social Media Solutions</a></li>
+                    <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing & Social Media
+                        Solutions</a></li>
                   </ul>
                 </li>
                 <li>
@@ -119,7 +127,7 @@
         </div>
       </div>
     </nav>
-  
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -128,7 +136,7 @@
         dropdownElementList.map(function (dropdownToggleEl) {
           return new bootstrap.Dropdown(dropdownToggleEl);
         });
-  
+
         // Enable sub-dropdowns
         var subDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-submenu .dropdown-toggle'));
         subDropdownElementList.forEach(function (el) {
@@ -138,7 +146,7 @@
             submenu.classList.toggle('show');
           });
         });
-  
+
         // Close sub-dropdown when parent is closed
         var mainDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'));
         mainDropdownElementList.forEach(function (el) {
@@ -153,46 +161,51 @@
     </script>
     <style>
       /* Ensure dropdown menu appears on hover */
-      .navbar-nav .dropdown:hover > .dropdown-menu {
+      .navbar-nav .dropdown:hover>.dropdown-menu {
         display: block;
       }
-  
+
       /* Hide second level submenus initially */
       .dropdown-submenu .dropdown-menu {
         display: none;
       }
-  
+
       /* Show second level submenu on hover */
       .dropdown-submenu:hover .dropdown-menu {
         display: block;
       }
-  
+
       /* Style for sub-dropdown */
       .dropdown-submenu {
         position: relative;
       }
+
       .dropdown-submenu .dropdown-menu {
         top: 0;
         left: 100%;
         margin-left: 0.1rem;
         margin-right: 0.1rem;
       }
-  
+
       /* Adjust dropdown menu styles for mobile */
       @media (max-width: 768px) {
         .navbar-nav .dropdown-menu {
           display: block;
-          position: static; /* Ensure dropdown is not fixed */
+          position: static;
+          /* Ensure dropdown is not fixed */
         }
+
         .dropdown-menu.show {
           display: block;
         }
+
         .dropdown-submenu .dropdown-menu {
-          display: none; /* Hide second level submenus on mobile */
+          display: none;
+          /* Hide second level submenus on mobile */
         }
       }
     </style>
-    
+
     <!-- Navbar -->
 
   </header>
@@ -205,20 +218,20 @@
         <div
           class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light text-center text-lg-left">
           <div>
-            <h2  class="fw-bolder">Mobile Application</h2>
-    
+            <h2 class="fw-bolder">Mobile Application</h2>
+
             <style>
               h2 {
-                  font-size: 45px;
+                font-size: 45px;
               }
-      
+
               @media only screen and (max-width: 600px) {
-                  h2 {
-                      font-size: 30px;
-                  }
-                  
+                h2 {
+                  font-size: 30px;
+                }
+
               }
-          </style>
+            </style>
             </style>
 
             </style>
@@ -448,78 +461,108 @@
   <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
     <!-- place footer here -->
     <div class="row ">
-      <div class="col-12 col-lg-3 col-md-3">
-     <a style="text-decoration: none;color: #686D76;" href="index.html"> <h6 style="font-weight: 400;">Home</h6></a>  
-     <a style="text-decoration: none;color: #686D76;" href="about.html"> <h6 style="font-weight: 400;">About</h6></a>  
-     <a style="text-decoration: none;color: #686D76;" href="contact.html"><h6 style="font-weight: 400;">Contact</h6></a>  
+      <div class="col-12 col-lg-3 col-md-4">
+        <a style="text-decoration: none;color: #686D76;" href="index.html">
+          <h6 style="font-weight: 400;">Home</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="about.html">
+          <h6 style="font-weight: 400;">About</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="contact.html">
+          <h6 style="font-weight: 400;">Contact</h6>
+        </a>
         <!-- <h6 style="font-weight: 400;">Payment Options</h6>
         <h6 style="font-weight: 400;">Testimonials</h6>
         <h6 style="font-weight: 400;">Blog</h6> -->
-        <a style="text-decoration: none;color: #686D76;" href="careers.html"><h6 style="font-weight: 400;">Careers</h6></a>  
+        <a style="text-decoration: none;color: #686D76;" href="careers.html">
+          <h6 style="font-weight: 400;">Careers</h6>
+        </a>
         <!-- <h6 style="font-weight: 400;">FAQ</h6>
         <h6 style="font-weight: 400;">Feedback</h6> -->
-        <a style="text-decoration: none;color: #686D76;" href="clients.html"> <h6 style="font-weight: 400;">Clients</h6> </a>  
-          <a style="text-decoration: none;color: #686D76;" href="resweb.html"> <h6 style="font-weight: 400;">Responsive Web Design</h6></a> 
-            <a style="text-decoration: none;color: #686D76;" href="webdesign.html"> <h6 style="font-weight: 400;">Web Design</h6></a> 
-              <a style="text-decoration: none;color: #686D76;" href="webdesign.html"><h6 style="font-weight: 400;">Web Maintenance</h6> </a> 
-      </div>
-      <div class="col-12 col-lg-3 col-md-3">
-     
-        <a style="text-decoration: none;color: #686D76;" href="custtomweb.html"> <h6 style="font-weight: 400;">Custom Web Applications</h6> </a>  
-          <a style="text-decoration: none;color: #686D76;" href="ecommerceweb.html"> <h6 style="font-weight: 400;">E Commerce Web Solutions</h6></a>  
-            <a style="text-decoration: none;color: #686D76;" href="businessweb.html"><h6 style="font-weight: 400;">Business Web Design </h6> </a>  
-              <a style="text-decoration: none;color: #686D76;" href="cmsweb.html"> <h6 style="font-weight: 400;">CMS Web Design</h6></a>  
-                <a style="text-decoration: none;color: #686D76;" href="webapp.html"><h6 style="font-weight: 400;">Web Application</h6> </a> 
-        <a style="text-decoration: none;color: #686D76;" href="matrimony.html">  <h6 style="font-weight: 400;">Matrimony Web Solutions</h6> </a>
-          <a style="text-decoration: none;color: #686D76;" href="businesssol.html"><h6 style="font-weight: 400;">Business Solutions</h6></a>  
-            <a style="text-decoration: none;color: #686D76;" href="talent.html"> <h6 style="font-weight: 400;">Talent Management</h6></a> 
-
-      </div>
-      <div class="col-12 col-lg-3 col-md-3">
-        <a style="text-decoration: none;color: #686D76;" href="domains.html"><h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6> </a>  
-          <a style="text-decoration: none;color: #686D76;" href="google.html"><h6 style="font-weight: 400;">Google Work Partner</h6> </a>  
-            <a style="text-decoration: none;color: #686D76;" href="aws.html"><h6 style="font-weight: 400;">AWS Services Implementations</h6> </a> 
-        <a style="text-decoration: none;color: #686D76;" href="digital.html"><h6 style="font-weight: 400;">Digital Marketing and Social Media</h6> </a>  
-          <a style="text-decoration: none;color: #686D76;" href="mobileapp.html"><h6 style="font-weight: 400;">Mobile Applications </h6> </a> 
-            <a style="text-decoration: none;color: #686D76;" href="marketting.html"><h6 style="font-weight: 400;">Marketing Support Services</h6></a>  
-              <a style="text-decoration: none;color: #686D76;" href="personal.html"> <h6 style="font-weight: 400;">Personal and Enterprise Email</h6> </a>
-                <a style="text-decoration: none;color: #686D76;" href="email.html"><h6 style="font-weight: 400;">Email Campaign Management</h6> </a> 
-      </div>
-
-      <div style="line-height: 5px;" class="col-12 col-lg-3 col-md-3 ">
-        <br><br>
-        <a href="">
-          <center><img style="margin-bottom: 10px;" height="80px
-                    " src="./images/New Logo 2.png" alt=""></center>
+        <a style="text-decoration: none;color: #686D76;" href="clients.html">
+          <h6 style="font-weight: 400;">Clients</h6>
         </a>
-        <br>
-
-        <a href="./images/JK Global IT Solutions Portfolio.pdf" download>
-          <center>
-              <img class="img-fluid" height="20px" src="./images/Frame 496.png" alt="">
-          </center>
-      </a>
-      
-        <br>
-
-        <a href="">
-          <center><img class="img-fluid" src="./images/Frame 13.png" alt=""></center>
+        <a style="text-decoration: none;color: #686D76;" href="resweb.html">
+          <h6 style="font-weight: 400;">Responsive Web Design</h6>
         </a>
-        <br> <br>
-
-        <a href="">
-          <center><img class="img-fluid" src="./images/Frame 14.png" alt=""></center>
+        <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+          <h6 style="font-weight: 400;">Web Design</h6>
         </a>
-        <br> <br>
+        <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+          <h6 style="font-weight: 400;">Web Maintenance</h6>
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4">
 
-        <div style="column-gap: 5px;" class="d-flex justify-content-center align-items-center ">
-          <center><img class="img-fluid" src="./images/Symbol.svg.png" alt=""></center>
-          <center><img class="img-fluid" src="./images/Frame 499.png" alt=""></center>
-          <center><img class="img-fluid" src="./images/Frame 497.png" alt=""></center>
-          <center><img class="img-fluid" src="./images/Frame 500.png" alt=""></center>
+        <a style="text-decoration: none;color: #686D76;" href="custtomweb.html">
+          <h6 style="font-weight: 400;">Custom Web Applications</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="ecommerceweb.html">
+          <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="businessweb.html">
+          <h6 style="font-weight: 400;">Business Web Design </h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="cmsweb.html">
+          <h6 style="font-weight: 400;">CMS Web Design</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="webapp.html">
+          <h6 style="font-weight: 400;">Web Application</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="matrimony.html">
+          <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="businesssol.html">
+          <h6 style="font-weight: 400;">Business Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="talent.html">
+          <h6 style="font-weight: 400;">Talent Management</h6>
+        </a>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-4">
+        <a style="text-decoration: none;color: #686D76;" href="domains.html">
+          <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="google.html">
+          <h6 style="font-weight: 400;">Google Work Partner</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="aws.html">
+          <h6 style="font-weight: 400;">AWS Services Implementations</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="digital.html">
+          <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="mobileapp.html">
+          <h6 style="font-weight: 400;">Mobile Applications </h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="marketting.html">
+          <h6 style="font-weight: 400;">Marketing Support Services</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="personal.html">
+          <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="email.html">
+          <h6 style="font-weight: 400;">Email Campaign Management</h6>
+        </a>
+      </div>
+
+      <div style="line-height: 5px;" class="col-12 col-lg-3 col-md-12 text-center">
+
+        <div class="py-2 ">
+          <img src="./images/New Logo 2.png" style="width: auto; height: 90px;" alt="">
         </div>
-
-
+        <div class=""><a href="./images/JK Global IT Solutions Portfolio.pdf" class="text-light p-2 px-4 rounded"
+            style="background-color: #d21312; text-decoration: none;">Download Broucher</a></div>
+        <p class="pt-4"><i class="fa-regular fa-envelope p-1"></i>jkglobalitsolution@gmail.com</p>
+        <p class="p-0 m-0"><i class="fa-solid fa-phone p-1"></i>8438438413, 8608600772, 8608600778 </p>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <img class="p-1" src="./images/footer icon/fb.png" alt="">
+          <img class="p-1" src="./images/footer icon/whats app.png" alt="">
+          <img class="p-1" src="./images/footer icon/x.png" alt="">
+          <img class="p-1" src="./images/footer icon/linkdin.png" alt="">
+          <img class="p-1" src="./images/footer icon/insta.png" alt="">
+        </div>
       </div>
     </div>
 
