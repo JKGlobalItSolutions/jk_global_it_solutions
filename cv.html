@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CV</title>
+</head>
+<body>
+    <form id="cvForm">
+        <label for="cvUpload">Upload your CV:</label>
+        <input type="file" id="cvUpload" name="cvUpload" accept=".pdf,.doc,.docx" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("VGvEND5sp-v3tZ6A-"); // Initialize EmailJS with your public key
+        })();
+        
+        document.getElementById('cvForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('cvUpload');
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            
+            reader.onload = function(event) {
+                const base64File = event.target.result.split(',')[1];
+                
+                // EmailJS email sending
+                emailjs.send('service_jk37ps8', 'template_tattmvo', {
+                    file_attachment: base64File,
+                    to_email: 'recipient@example.com' // Replace with the recipient's email
+                }).then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('CV sent successfully via email!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send CV via email.');
+                });
+                
+                // WhatsApp link generation
+                const whatsappNumber = '9894924809';
+                const encodedFile = encodeURIComponent(base64File);
+                const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Please find attached my CV.&attachment=${encodedFile}`;
+                window.open(whatsappLink, '_blank');
+            };
+            
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>
