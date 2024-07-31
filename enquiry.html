@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Global IT Solutions</title>
+    <link rel="icon" type="image/x-icon" href="./images/fevicol.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #enquiry-link {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /* Popup Form Styles */
+        .popup-form {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #d21312; /* Set border color to #d21312 */
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d21312; /* Set background color to #d21312 */
+            color: #fff; /* Set text color to white */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a10c0c; /* Slightly darker shade for hover effect */
+        }
+    </style>
+</head>
+
+    <body style="align-items: center;" class=" m-0">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
+            <a href="/"
+              class="px-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
+              <img src="./images/logo.png" height="50" alt="">
+            </a>
+      
+            <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
+            <a href="http://www.youtube.com/@Jkglobalitsolutions_official"><li class="nav-item px-0  d-flex justify-content-center align-items-center"><img
+              src="./images/youtube icon.png" alt=""></li></a>  
+              <li class="nav-item px-0  d-flex justify-content-center align-items-center"><img src="./images/call.png"
+                  alt=""><a href="#" class="nav-link text-dark">+8438438413</a></li>
+              
+              <li style="text-decoration:   none;" class="nav-item" id="enquiry-link"><a href="#" style="font-size: 10px;" class="nav-link text-light bg-danger px-3 me-2">Fast
+                  Query</a></li>
+            </ul>
+          </div>
+      
+      
+          <!-- Navbar -->
+          <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul style="background-color: #f0ebe3;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="webdesign.html">Web Design</a>
+                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                          <li><a class="dropdown-item pb-3 pt-3" href="businessweb.html">Business Web-Design</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="resweb.html">Responsive Web-Design</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="cmsweb.html">CMS Web-Design</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item pb-3 pt-3" href="webmaintenance.html">Web Maintenance</a>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="webapp.html">Web Application</a>
+                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                          <li><a class="dropdown-item pb-3 pt-3" href="custtomweb.html">Custom Web Applications</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="matrimony.html">Matrimony Web Solutions</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item pb-3 pt-3" href="mobileapp.html">Mobile Application</a>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="businesssol.html">Business Solution</a>
+                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                          <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and Cloud Solutions</a>
+                          </li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and Enterprise Email
+                              Solutions</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="google.html">Google Work Partner</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign Management Solutions</a>
+                          </li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="aws.html">AWS Services Implementations</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="design.html">Design and Branding Solutions</a></li>
+                          <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing & Social Media
+                              Solutions</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item pb-3 pt-3" href="marketting.html">Marketing Support Services</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item pb-3 pt-3" href="webaudit.html">Website Auditing and Consulting Service</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item pb-3 pt-3" href="bpo.html">BPO</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="talent.html">Talent Management</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="intern.html">Internship</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Enable dropdowns
+              var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+              dropdownElementList.map(function (dropdownToggleEl) {
+                return new bootstrap.Dropdown(dropdownToggleEl);
+              });
+      
+              // Enable sub-dropdowns
+              var subDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-submenu .dropdown-toggle'));
+              subDropdownElementList.forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                  e.stopPropagation();
+                  var submenu = el.nextElementSibling;
+                  submenu.classList.toggle('show');
+                });
+              });
+      
+              // Close sub-dropdown when parent is closed
+              var mainDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'));
+              mainDropdownElementList.forEach(function (el) {
+                el.addEventListener('hidden.bs.dropdown', function () {
+                  var submenus = el.querySelectorAll('.dropdown-menu.show');
+                  submenus.forEach(function (submenu) {
+                    submenu.classList.remove('show');
+                  });
+                });
+              });
+            });
+          </script>
+          <style>
+            /* Ensure dropdown menu appears on hover */
+            .navbar-nav .dropdown:hover>.dropdown-menu {
+              display: block;
+            }
+      
+            /* Hide second level submenus initially */
+            .dropdown-submenu .dropdown-menu {
+              display: none;
+            }
+      
+            /* Show second level submenu on hover */
+            .dropdown-submenu:hover .dropdown-menu {
+              display: block;
+            }
+      
+            /* Style for sub-dropdown */
+            .dropdown-submenu {
+              position: relative;
+            }
+      
+            .dropdown-submenu .dropdown-menu {
+              top: 0;
+              left: 100%;
+              margin-left: 0.1rem;
+              margin-right: 0.1rem;
+            }
+      
+            /* Adjust dropdown menu styles for mobile */
+            @media (max-width: 768px) {
+              .navbar-nav .dropdown-menu {
+                display: block;
+                position: static;
+                /* Ensure dropdown is not fixed */
+              }
+      
+              .dropdown-menu.show {
+                display: block;
+              }
+      
+              .dropdown-submenu .dropdown-menu {
+                display: none;
+                /* Hide second level submenus on mobile */
+              }
+            }
+          </style>
+      
+          <!-- Navbar -->
+      
+        </header>
+      
+      
+        <main>
+          <!-- Banner section -->
+          <div style="height: 470px;" class="banner container-fluid d-flex align-items-center ">
+            <div class="row w-100">
+              <div
+                class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light text-center text-lg-left">
+                <div>
+                  <h2 class="fw-bolder">Mobile Application</h2>
+      
+                  <style>
+                    h2 {
+                      font-size: 45px;
+                    }
+      
+                    @media only screen and (max-width: 600px) {
+                      h2 {
+                        font-size: 30px;
+                      }
+      
+                    }
+                  </style>
+                  </style>
+      
+                  </style>
+                  <p style="font-size: 18px;" class="h6 fw-bolder">"Make a global impact with your innovative thinking"</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./images/cuate.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Banner section -->
+          <!-- Content  Section-->
+          <div class="content container my-5">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                <h5 class="fw-bold" style="color: #D21312;">WEB DEVELOPMENT COMPANY IN TIRUVANNAMALAI</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  JK Global IT Solutions, based in Tiruvannamalai, India, is a professional web development firm offering
+                  comprehensive design, development, and deployment services to businesses across various scales. Established
+                  in 2023 as a burgeoning software development entity in Tiruvannamalai, our company has since expanded
+                  significantly in both scope and expertise, evolving into the esteemed brand known today as 'JK Global IT
+                  Solutions'. We specialize in delivering a diverse range of high-quality solutions and services that empower
+                  businesses to thrive.
+                </p>
+                <h5 class="fw-bold" style="color: #D21312;">Software Development</h5>
+                <p class="fw-normal" style="color: #686D76;">
+                  Furthermore, our web development services are tailored to meet the unique needs of our clients, promising to
+                  leave them satisfied. Contact us today to discover how we can assist you with your specific requirements and
+                  leave you delighted with our solutions.
+                </p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./images/Computer png (1).png" alt="Computer Image">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h5 class="fw-bold" style="color: #D21312;">Economical Website Design Firm</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  JK Global IT Solutions stands as a cost-effective web design firm in Tiruvannamalai, boasting years of
+                  expertise in crafting compelling websites. Our team comprises top-tier professionals dedicated to delivering
+                  precisely what you envision. Modern web design and development have evolved beyond basic elements like
+                  images and text on a homepage. Today, it's about crafting a seamless user experience. Clients now seek more
+                  than just a website; they require a partner who can foster business growth. As a budget-friendly web design
+                  company, we not only create websites but also offer comprehensive support in content creation and marketing.
+                  Our goal is to ensure your site not only attracts traffic but also converts leads effectively.
+                </p>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  Here we offers competitively priced website design solutions utilizing cutting-edge technologies such as
+                  WordPress and the Bootstrap framework. These platforms are user-friendly, empowering users to manage their
+                  websites effortlessly, even without technical coding skills. Our commitment lies in delivering
+                  cost-effective web design services that leverage modern tools to ensure simplicity and functionality, making
+                  it accessible for all clients to maintain and update their online presence seamlessly.
+                </p>
+                <h5 class="fw-bold" style="color: #D21312;">Website Design Services in Tiruvannamalai</h5>
+                <p class="fw-normal" style="color: #686D76;">
+                  In Tiruvannamalai, JK Global IT Solutions excels in delivering exceptional website design services. We blend
+                  advanced technologies with timeless creativity to offer unparalleled web design solutions to our clientele.
+                  At JK Global IT Solutions, we specialize in tailor-made website designs that align perfectly with your
+                  business objectives. Our seasoned professionals bring years of expertise, crafting effective online
+                  marketing strategies tailored to your business needs. Whether it's logo and banner design, e-commerce
+                  solutions, web hosting, domain registration, or comprehensive web development, we provide a comprehensive
+                  suite of services under one roof at affordable rates, ensuring all your online business needs are met
+                  seamlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Content  Section-->
+          <!-- Service Section -->
+          <div class="container-fluid py-5" style="background-color: #f1f1f1;">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <center>
+                    <h1 class="fw-bold" style="color: #000000;">OUR DIGITAL SERVICES</h1>
+                  </center>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <img class="img-fluid custom-img" src="./images/Rectangle 10.png" alt="Rectangle Image">
+                </div>
+              </div>
+              <div class="row text-center mt-5">
+                <div class="col-12 col-md-4">
+                  <img src="./images/brush.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Web Maintenance</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    JK Global IT Solutions offers website maintenance services designed to keep your website running smoothly
+                    and up-to-date. Our comprehensive service includes regular updates and thorough error checks to ensure
+                    your visitors enjoy a seamless user experience. By choosing our website maintenance service, you can
+                    reclaim valuable time to concentrate on other business priorities. Our team of skilled professionals
+                    handles all technical aspects, providing assurance that your website is well-maintained and functioning
+                    optimally.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="./images/build.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Web Design</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    JK Global IT Solution is a leading web design firm in Tiruvannamalai, known for its talented team of
+                    designers who have extensive experience with prominent local brands. We specialize in creating visually
+                    appealing, responsive websites for businesses of all sizes across various sectors such as real estate,
+                    healthcare, IT, and education. From established enterprises to startups, JK Global IT Solution delivers
+                    exceptional websites tailored to meet your specific needs and budget, ensuring a perfect fit for your
+                    requirements.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="./images/laptop_mac.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Web Application</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    At JK Global IT Solutions, we specialize in crafting customized web applications for businesses of all
+                    sizes. Our certified developers create bespoke solutions tailored to meet your specific needs. Contact us
+                    today to learn more about our cost-effective and versatile web applications built on open-source
+                    technologies. We excel in developing everything from simple CMS to complex e-commerce platforms and
+                    personalized ERP solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-center mt-5">
+                <div class="col-12 col-md-4">
+                  <img src="./images/thumb_up.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Business Solutions</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    JK Global IT Solution offers a wide range of business solutions to boost efficiency and productivity. Our
+                    cloud hosting and maintenance services provide fast, secure, and scalable solutions tailored to meet
+                    client needs. We manage business email systems for seamless operation and offer effective bulk email
+                    campaign solutions. Our Google and AWS services provide powerful cloud tools for collaboration, data
+                    management, and application development. Additionally, we offer domain registration and hosting to
+                    establish and maintain online presence. Count on us for reliable, high-quality services that help
+                    businesses succeed.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="./images/smartphone.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Mobile Applications</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    JK Global IT Solution offers advanced mobile app development services to keep businesses competitive in
+                    today's mobile-driven landscape. We specialize in creating tailored mobile apps that precisely meet client
+                    needs, using cutting-edge technology and best practices to deliver high-quality, user-friendly
+                    experiences. Whether for iOS, Android, or cross-platform use, we collaborate closely with clients to
+                    ensure our final products exceed industry standards. From initial concept to rigorous testing and
+                    deployment, our comprehensive development process ensures innovative, scalable, and affordable solutions
+                    that drive business success.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="./images/person.png" alt="">
+                  <h5 class="fw-bold" style="color: #D21312;">Digital Marketing and Social Media Solutions</h5>
+                  <p style="color: #686D76;" class="mt-3 fw-normal">
+                    Looking to boost your business with digital marketing or social media expertise? JK Global IT Solutions
+                    offers tailored services to drive online growth. From SEO and social media management to targeted
+                    pay-per-click campaigns, we provide customized solutions. As social media optimization specialists, we
+                    enhance visibility and engage with your audience on platforms like Facebook, Twitter, LinkedIn, and
+                    Pinterest. With proven digital marketing techniques, we effectively promote your brand and foster
+                    meaningful interactions online. Trust JK Global IT Solutions to achieve your digital marketing and social
+                    media goals efficiently.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Section -->
+          <!-- Reliable Section -->
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-12">
+                <h5 class="fw-bold" style="color: #D21312;">Reliable Application Development Firm in Tiruvannamalai</h5>
+                <p style="color: #686D76;" class="mt-3 fw-normal">
+                  JK Global IT Solution is a leading application development firm based in Tiruvannamalai specializing in
+                  creating efficient and user-friendly web and mobile applications for businesses of all scales. With
+                  extensive experience, our team offers consulting, design, development, implementation, and maintenance
+                  services across various application types. We excel in delivering custom-built systems that can be deployed
+                  either on-site or in the cloud, providing remote accessibility from any device with internet connectivity.
+                  Collaborate with us to elevate your business using our dependable and cutting-edge application development
+                  solutions.
+                </p>
+                <h5 class="fw-bold" style="color: #D21312;">Website Design Services in Tiruvannamalai</h5>
+                <p class="fw-normal" style="color: #686D76;">
+                  In Tiruvannamalai, JK Global IT Solutions excels in delivering exceptional website design services. We blend
+                  advanced technologies with timeless creativity to offer unparalleled web design solutions to our clientele.
+                  At JK Global IT Solutions, we specialize in tailor-made website designs that align perfectly with your
+                  business objectives. Our seasoned professionals bring years of expertise, crafting effective online
+                  marketing strategies tailored to your business needs. Whether it's logo and banner design, e-commerce
+                  solutions, web hosting, domain registration, or comprehensive web development, we provide a comprehensive
+                  suite of services under one roof at affordable rates, ensuring all your online business needs are met
+                  seamlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Reliable Section -->
+          <!-- Choose -->
+          <div class="container text-center my-5">
+            <h1 class="fw-bolder" style="color: #D21312;">Why Choose Us?</h1>
+            <p class="w-75 mx-auto" style="color: #686D76;">
+              Ultimately, our commitment to our core values and our mission to empower clients with effective solutions have
+              been instrumental in shaping our success. This steadfast dedication enables us to maintain our clients' trust
+              and consistently deliver exceptional results. Our skilled experts, coupled with well-established processes and
+              protocols, allow us to deliver efficient business support consistently across all levels. Above all, we
+              prioritize our clients and their technological investments. As the top software development company in
+              Tiruvannamalai, we dedicate ourselves to delivering the highest quality results and ensuring our clients'
+              satisfaction.
+            </p>
+          </div>
+          <!-- Choose -->
+        </main>
+      
+      
+        <style>
+          .banner {
+            background-image: url(./images/Rectangle%203.jpg);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+          }
+      
+          .custom-img {
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
+      
+      
+      
+        <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
+          <!-- place footer here -->
+          <div class="row ">
+            <div class="col-12 col-lg-3 col-md-4">
+              <a style="text-decoration: none;color: #686D76;" href="index.html">
+                <h6 style="font-weight: 400;">Home</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="about.html">
+                <h6 style="font-weight: 400;">About</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="contact.html">
+                <h6 style="font-weight: 400;">Contact</h6>
+              </a>
+              <!-- <h6 style="font-weight: 400;">Payment Options</h6>
+              <h6 style="font-weight: 400;">Testimonials</h6>
+              <h6 style="font-weight: 400;">Blog</h6> -->
+              <a style="text-decoration: none;color: #686D76;" href="careers.html">
+                <h6 style="font-weight: 400;">Careers</h6>
+              </a>
+              <!-- <h6 style="font-weight: 400;">FAQ</h6>
+              <h6 style="font-weight: 400;">Feedback</h6> -->
+              <a style="text-decoration: none;color: #686D76;" href="clients.html">
+                <h6 style="font-weight: 400;">Clients</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="resweb.html">
+                <h6 style="font-weight: 400;">Responsive Web Design</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+                <h6 style="font-weight: 400;">Web Design</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+                <h6 style="font-weight: 400;">Web Maintenance</h6>
+              </a>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+      
+              <a style="text-decoration: none;color: #686D76;" href="custtomweb.html">
+                <h6 style="font-weight: 400;">Custom Web Applications</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="ecommerceweb.html">
+                <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="businessweb.html">
+                <h6 style="font-weight: 400;">Business Web Design </h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="cmsweb.html">
+                <h6 style="font-weight: 400;">CMS Web Design</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="webapp.html">
+                <h6 style="font-weight: 400;">Web Application</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="matrimony.html">
+                <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="businesssol.html">
+                <h6 style="font-weight: 400;">Business Solutions</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="talent.html">
+                <h6 style="font-weight: 400;">Talent Management</h6>
+              </a>
+      
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+              <a style="text-decoration: none;color: #686D76;" href="domains.html">
+                <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="google.html">
+                <h6 style="font-weight: 400;">Google Work Partner</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="aws.html">
+                <h6 style="font-weight: 400;">AWS Services Implementations</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="digital.html">
+                <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="mobileapp.html">
+                <h6 style="font-weight: 400;">Mobile Applications </h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="marketting.html">
+                <h6 style="font-weight: 400;">Marketing Support Services</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="personal.html">
+                <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
+              </a>
+              <a style="text-decoration: none;color: #686D76;" href="email.html">
+                <h6 style="font-weight: 400;">Email Campaign Management</h6>
+              </a>
+            </div>
+      
+            <div style="line-height: 1px;" class="col-12 col-lg-3 col-md-12 text-center">
+      
+              <div class="py-2 mb-3 ">
+                <img src="./images/New Logo 2.png" style="width: auto; height: 90px;" alt="">
+              </div>
+              <div class=""><a href="./images/JK Global IT Solutions Portfolio.pdf" class="text-light p-2 px-4 rounded"
+                  style="background-color: #d21312; text-decoration: none;">Download Broucher</a></div>
+                  <div> <p style="font-size: 15px;" class="mt-4 mb-0"><i class="fa-regular fa-envelope p-1"></i>jkglobalitsolution@gmail.com 
+                  </p>
+                  <p style="font-size: 15px;" class="p-0 m-2"><i class="fa-solid fa-phone p-1"></i>8438438413,8608600772, 8608600778 </p>
+                  <div class="d-flex justify-content-center align-items-center mt-3">
+                   <a href="https://www.facebook.com/profile.php?id=61559888076422"><img class="p-1" src="./images/footer icon/fb.png" alt=""></a> 
+                  <a href="http://www.youtube.com/@Jkglobalitsolutions_official"><img class="p-1" src="./images/youtube icon.png" alt=""></a>  
+                  <a href="https://x.com/Jkglobalitsol"><img class="p-1" src="./images/footer icon/x.png" alt=""></a>  
+                    <img class="p-1" src="./images/footer icon/linkdin.png" alt="">
+                  <a href="https://www.instagram.com/jkglobalitsolutions_officials/"><img class="p-1" src="./images/footer icon/insta.png" alt=""></a> 
+                  </div>
+          
+          
+                </div>
+           
+            </div>
+      
+           
+          </div>
+      
+      
+      
+        </footer>
+        <div style="background-color: #d21312;"
+          class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
+          <p class="mb-0"><b>&copy; 2024 JK Global IT Solutions.</b></p>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+          crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </body>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const enquiryLink = document.getElementById('enquiry-link');
+            const popupForm = document.getElementById('popup-form');
+            const closeBtn = document.getElementById('close-btn');
+
+            enquiryLink.addEventListener('click', () => {
+                popupForm.style.display = 'flex';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popupForm.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === popupForm) {
+                    popupForm.style.display = 'none';
+                }
+            });
+
+            const form = document.getElementById('enquiry-form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                // Handle form submission logic here
+                // For example, send the data to your server or show a success message
+                alert('Form submitted!');
+            });
+        });
+    </script>
+
+    <!-- Enquiry Link -->
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #enquiry-link {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /* Popup Form Styles */
+        .popup-form {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #d21312; /* Set border color to #d21312 */
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d21312; /* Set background color to #d21312 */
+            color: #fff; /* Set text color to white */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a10c0c; /* Slightly darker shade for hover effect */
+        }
+    </style>
+
+    <!-- Popup Form -->
+    <div id="popup-form" class="popup-form">
+        <div class="form-container">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Enquiry Form</h2>
+            <form id="enquiry-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                
+                <label for="company">Your Company:</label>
+                <input type="text" id="company" name="company" required>
+                
+                <label for="description">Describe what you need:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</html>
