@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JK Global IT Solutions</title>
+    <link rel="icon" type="image/x-icon" href="./images/fevicol.png"> <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("mmVnSnYJOJgj3e4hn");
+        })();
+    </script>
+</head>
+
+<body style="align-items: center;" class="">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
+            <a href="/"
+                class="px-3 d-flex d-lg-block d-none align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
+                <img src="./images/logo.png" height="40" alt="">
+            </a>
+            <a href=""></a>
+            <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
+                <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img
+                        src="./images/whatsapp_symbol.svg.png" alt=""></li>
+                <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img src="./images/call.png"
+                        alt=""><a href="#" class="nav-link text-dark">+8438438413</a></li>
+                <li style="text-decoration:   none;" class="nav-item" id="enquiry-link"><a href="#"
+                        style="font-size: 10px;" class="nav-link text-light bg-danger px-3 me-2">Fast
+                        Query</a></li>
+            </ul>
+        </div>
+
+
+
+        <!-- Navbar -->
+        <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="index.html"><img width="200px" src="./images/logo.png"
+                        alt=""></a>
+                <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const navbarToggler = document.getElementById('navbar-toggler');
+                            const navbarNavDropdown = document.getElementById('navbarNavDropdown');
+
+                            navbarToggler.addEventListener('click', function () {
+                                // Check if the dropdown is currently shown
+                                if (window.innerWidth <= 768 && navbarNavDropdown.classList.contains('show')) {
+                                    // If it's shown and the button is clicked, remove the 'show' class to close it
+                                    navbarNavDropdown.classList.remove('show');
+                                }
+                            });
+                        });
+
+                    </script>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 justify-content-center justify-content-lg-around">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Design & Development
+                            </a>
+                            <ul style="background-color: #f0ebe3;" class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="webdesign.html">Web
+                                        Design</a>
+                                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                        <li><a class="dropdown-item pb-3 pt-3" href="businessweb.html">Business
+                                                Web-Design</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="resweb.html">Responsive
+                                                Web-Design</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="cmsweb.html">CMS Web-Design</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item pb-3 pt-3" href="webmaintenance.html">Web Maintenance</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="webapp.html">Web
+                                        Application</a>
+                                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                        <li><a class="dropdown-item pb-3 pt-3" href="custtomweb.html">Custom Web
+                                                Applications</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="ecommerceweb.html">E-Commerce Web
+                                                Solutions</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="matrimony.html">Matrimony Web
+                                                Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item pb-3 pt-3" href="mobileapp.html">Mobile Application</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle pb-3 pt-3" href="businesssol.html">Business
+                                        Solution</a>
+                                    <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                        <li><a class="dropdown-item pb-3 pt-3" href="domains.html">Domains, Hosting and
+                                                Cloud Solutions</a>
+                                        </li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="personal.html">Personal and
+                                                Enterprise Email
+                                                Solutions</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="google.html">Google Work
+                                                Partner</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="email.html">Email Campaign
+                                                Management Solutions</a>
+                                        </li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="aws.html">AWS Services
+                                                Implementations</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="design.html">Design and Branding
+                                                Solutions</a></li>
+                                        <li><a class="dropdown-item pb-3 pt-3" href="digital.html">Digital Marketing &
+                                                Social Media
+                                                Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item pb-3 pt-3" href="marketting.html">Marketing Support
+                                        Services</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item pb-3 pt-3" href="webaudit.html">Website Auditing and
+                                        Consulting Service</a>
+                                </li>
+                                <!-- <li>
+                        <a class="dropdown-item pb-3 pt-3" href="bpo.html">BPO</a>
+                      </li> -->
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="Service.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Networking Solutions
+                            </a>
+                            <ul style="background-color: #f0ebe3;" class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="system.html">Systems Integration and
+                                        Maintenance</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="infrastructure.html">Infrastructure
+                                        Management</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item pb-3 pt-3" href="server.html">Server & Storage</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="network.html">Network Security</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="structuredcabling.html">Structured
+                                        Cabling</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="cloudnative.html">Cloud Native
+                                        Solutions</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  pb-3 pt-3" href="workplace.html">Workplace Surveillance</a>
+
+                                </li>
+
+                                <!-- <li>
+                        <a class="dropdown-item pb-3 pt-3" href="bpo.html">BPO</a>
+                      </li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">ITES Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="talent.html">Talent Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="intern.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Enable dropdowns
+                var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+                dropdownElementList.map(function (dropdownToggleEl) {
+                    return new bootstrap.Dropdown(dropdownToggleEl);
+                });
+
+                // Enable sub-dropdowns
+                var subDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-submenu .dropdown-toggle'));
+                subDropdownElementList.forEach(function (el) {
+                    el.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        var submenu = el.nextElementSibling;
+                        submenu.classList.toggle('show');
+                    });
+                });
+
+                // Close sub-dropdown when parent is closed
+                var mainDropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'));
+                mainDropdownElementList.forEach(function (el) {
+                    el.addEventListener('hidden.bs.dropdown', function () {
+                        var submenus = el.querySelectorAll('.dropdown-menu.show');
+                        submenus.forEach(function (submenu) {
+                            submenu.classList.remove('show');
+                        });
+                    });
+                });
+
+                // Fix collapsing issue with navbar toggler
+                var navbarToggler = document.querySelector('#navbar-toggler');
+                navbarToggler.addEventListener('click', function () {
+                    var navbarCollapse = document.getElementById('navbarNavDropdown');
+                    if (navbarCollapse.classList.contains('show')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                    } else {
+                        bootstrap.Collapse.getInstance(navbarCollapse).show();
+                    }
+                });
+
+                // Close dropdowns when clicking outside
+                document.addEventListener('click', function (event) {
+                    var isClickInside = document.querySelector('.navbar').contains(event.target);
+                    if (!isClickInside) {
+                        var navbarCollapse = document.getElementById('navbarNavDropdown');
+                        if (navbarCollapse.classList.contains('show')) {
+                            bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <style>
+            /* Ensure dropdown menu appears on hover */
+            .navbar-nav .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            /* Hide second level submenus initially */
+            .dropdown-submenu .dropdown-menu {
+                display: none;
+            }
+
+            /* Show second level submenu on hover */
+            .dropdown-submenu:hover .dropdown-menu {
+                display: block;
+            }
+
+            /* Style for sub-dropdown */
+            .dropdown-submenu {
+                position: relative;
+            }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-left: 0.1rem;
+                margin-right: 0.1rem;
+            }
+
+            /* Adjust dropdown menu styles for mobile */
+            @media (max-width: 768px) {
+                .navbar-nav .dropdown-menu {
+                    display: block;
+                    position: static;
+                    /* Ensure dropdown is not fixed */
+                }
+
+                .dropdown-menu.show {
+                    display: block;
+                }
+
+                .dropdown-submenu .dropdown-menu {
+                    display: none;
+                    /* Hide second level submenus on mobile */
+                }
+            }
+        </style>
+
+
+
+
+        <!-- Navbar -->
+
+    </header>
+
+    <main>
+        <!-- Banner section -->
+        <div class="banner container-fluid">
+            <div class="row h-100">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-center text-light">
+                    <h2 class="fw-bolder">Cloud Native Solutions</h2>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="./images/cloud native banner.png" alt="Network Security">
+                </div>
+            </div>
+        </div>
+        <style>
+            /* Internal CSS for the banner and heading */
+            .banner {
+                background-image: url(./images/Rectangle\ 27.png);
+                height: 600px;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: black;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .banner {
+                    height: 400px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        </style>
+        <!-- Banner section -->
+        <!-- Content  Section-->
+
+
+        <div class="container">
+            <div class="row align-items-center my-5">
+                <div class="col-12 col-lg-8">
+                    <p
+                        style="color: #686D76; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        Stay ahead in today’s fast-changing business environment and climb the ladder of success by embracing innovative business models. By adopting a wide range of cloud services, you can enhance cost-efficiency, boost productivity, and improve operational effectiveness. This approach not only reduces operational costs but also optimizes your business processes, setting you on a path of accelerated growth and success.</p>
+                    <p
+                        style="color: #686D76;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        We have collaborated with Crayon to provide Infrastructure-as-a-Service (IaaS), allowing organizations to employ cloud-native tools that streamline software application management and operation via cloud computing. The pay-per-usage model, which is now popular, allows businesses to pay only for the services that they use. Our cloud solutions are designed to be adaptable, allowing businesses to optimize expenses while leveraging cloud capabilities.</p>
+                    <p
+                        style="color: #686D76;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        Be it high-performance cabling or the new optical fiber network adopt to structured cabling
+                        systems with cables and associated hardware for all kinds of needs within a specific building or
+                        across buildings or within a huge campus</p>
+                    <!-- <div style="gap: 5px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="d-flex">
+            <i class="fa fa-circle-o" style="font-size:20px;color:red"></i> <p style="color: #686D76;">Expert Support</p>
+           </div> -->
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img class="img-fluid" src="./images/cloud native image 1.png" alt="">
+                </div>
+            </div>
+        </div>
+     
+            <div style="background-color: #F1F1F1;" class="container-fluid p-2 p-lg-5 py-5">
+                <div class="container">
+                    <h3 style="color: #D21312;" class=" fw-bolder text-center">Secure Cloud Solution</h3>
+                    <p style="color: #686D76; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">At JK Global IT Solutions, in partnership with Crayon, we offer Infrastructure-as-a-Service (IaaS) and design private cloud solutions tailored for individual organizations. We provide training and knowledge transfer to empower clients to manage their private clouds independently.</p>
+                    <p style="color: #686D76; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Experience the benefits of an 'Intelligent Cloud' with our flexible pay-as-you-go model and a broad range of cloud services to meet your project or managed service needs. We help build smart multi-cloud strategies to optimize business costs and operations, ensuring a secure and centralized cloud environment.</p>
+                    <p style="color: #686D76; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Easily migrate your existing software to our intelligent cloud platform, and modernize your workplace with seamless, cost-effective transitions—guided every step of the way by JK Global IT Solutions and Crayon.</p>
+                    <div
+                    style="gap: 5px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+                    class="d-flex">
+                    <i class="fa fa-circle-o" style="font-size:20px;color:red"></i>
+                    <p style="color: #686D76;">Infra iQ – A centralized platform to monitor, analyze, and manage all your infrastructure environments efficiently.</p>
+                  </div>
+                    <div
+                    style="gap: 5px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+                    class="d-flex">
+                    <i class="fa fa-circle-o" style="font-size:20px;color:red"></i>
+                    <p style="color: #686D76;">Cloud iQ – A one-stop comprehensive self-service portal enabling you to manage Amazon Web Services and Microsoft Cloud Suite of 
+                        Technology products.</p>
+                  </div>
+                    <div
+                    style="gap: 5px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+                    class="d-flex">
+                    <i class="fa fa-circle-o" style="font-size:20px;color:red"></i>
+                    <p style="color: #686D76;">Cloud Easy – A huge cloud portfolio to manage project-specific or managed cloud services.</p>
+                  </div>
+                </div>
+
+      
+            </div>
+
+
+        <div class="container mobile-only">
+            <h1 style="color: #686D76; text-align: center;"><b>Networking Solutions</b> </h1>
+            <br>
+            <div class="row justify-content-center gx-3">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="system.html">
+                        <span class="box">
+                            <img src="./images/sys log 1.png" alt="" class="me-2">
+                            <b>System Integration &Maintenance</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="infrastructure.html">
+                        <span class="box">
+                            <img src="./images/sys logo 2.png" alt="" class="me-2">
+                            <b>Infrastructure Management</b>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="server.html">
+                        <span class="box">
+                            <img src="./images/sys logo 3.png" alt="" class="me-2">
+                            <b>Server & Storage</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="network.html">
+                        <span  class="box">
+                            <img src="./images/sys logo 4.png" alt="" class="me-2">
+                            <b>Network security</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="structuredcabling.html">
+                        <span  class="box">
+                            <img src="./images/sys logo 5.png" alt="" class="me-2">
+                            <b>Structured Cabling</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="cloudnative.html">
+                        <span style="background-color: black; border: none;" class="box">
+                            <img src="./images/sys logo 6.png" alt="" class="me-2">
+                            <b>Cloud Native Solution</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <a style="text-decoration: none;" href="workplace.html">
+                        <span class="box">
+                            <img src="./images/sys logo 7.png" alt="" class="me-2">
+                            <b>Workpalce Surveillance</b>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
+        <!-- place footer here -->
+        <div class="row ">
+            <div class="col-12 col-lg-3 col-md-4">
+                <a style="text-decoration: none;color: #686D76;" href="index.html">
+                    <h6 style="font-weight: 400;">Home</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="about.html">
+                    <h6 style="font-weight: 400;">About</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="contact.html">
+                    <h6 style="font-weight: 400;">Contact</h6>
+                </a>
+                <!-- <h6 style="font-weight: 400;">Payment Options</h6>
+        <h6 style="font-weight: 400;">Testimonials</h6>
+        <h6 style="font-weight: 400;">Blog</h6> -->
+                <a style="text-decoration: none;color: #686D76;" href="careers.html">
+                    <h6 style="font-weight: 400;">Careers</h6>
+                </a>
+                <!-- <h6 style="font-weight: 400;">FAQ</h6>
+        <h6 style="font-weight: 400;">Feedback</h6> -->
+                <a style="text-decoration: none;color: #686D76;" href="clients.html">
+                    <h6 style="font-weight: 400;">Clients</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="resweb.html">
+                    <h6 style="font-weight: 400;">Responsive Web Design</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+                    <h6 style="font-weight: 400;">Web Design</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+                    <h6 style="font-weight: 400;">Web Maintenance</h6>
+                </a>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+
+                <a style="text-decoration: none;color: #686D76;" href="custtomweb.html">
+                    <h6 style="font-weight: 400;">Custom Web Applications</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="ecommerceweb.html">
+                    <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="businessweb.html">
+                    <h6 style="font-weight: 400;">Business Web Design </h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="cmsweb.html">
+                    <h6 style="font-weight: 400;">CMS Web Design</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="webapp.html">
+                    <h6 style="font-weight: 400;">Web Application</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="matrimony.html">
+                    <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="businesssol.html">
+                    <h6 style="font-weight: 400;">Business Solutions</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="talent.html">
+                    <h6 style="font-weight: 400;">Talent Management</h6>
+                </a>
+
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <a style="text-decoration: none;color: #686D76;" href="domains.html">
+                    <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="google.html">
+                    <h6 style="font-weight: 400;">Google Work Partner</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="aws.html">
+                    <h6 style="font-weight: 400;">AWS Services Implementations</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="digital.html">
+                    <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="mobileapp.html">
+                    <h6 style="font-weight: 400;">Mobile Applications </h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="marketting.html">
+                    <h6 style="font-weight: 400;">Marketing Support Services</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="personal.html">
+                    <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
+                </a>
+                <a style="text-decoration: none;color: #686D76;" href="email.html">
+                    <h6 style="font-weight: 400;">Email Campaign Management</h6>
+                </a>
+            </div>
+
+            <div style="line-height: 1px;" class="col-12 col-lg-3 col-md-12 text-center">
+
+                <div class="py-2 mb-3 ">
+                    <img src="./images/New Logo 2.png" style="width: auto; height: 90px;" alt="">
+                </div>
+                <div class=""><a href="./images/JK Global IT Solutions Portfolio.pdf"
+                        class="text-light p-2 px-4 rounded"
+                        style="background-color: #d21312; text-decoration: none;">Download Broucher</a></div>
+                <div>
+                    <p style="font-size: 15px;" class="mt-4 mb-0"><i
+                            class="fa-regular fa-envelope p-1"></i>jkglobalitsolution@gmail.com
+                    </p>
+                    <p style="font-size: 15px;" class="p-0 m-2"><i
+                            class="fa-solid fa-phone p-1"></i>8438438413,8608600772,
+                    <p class="">8608600778</p>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <a href="https://www.facebook.com/profile.php?id=61559888076422"><img class="p-1"
+                                src="./images/footer icon/fb.png" alt=""></a>
+                        <a href="http://www.youtube.com/@Jkglobalitsolutions_official"><img class="p-1"
+                                src="./images/youtube icon.png" alt=""></a>
+                        <a href="https://x.com/Jkglobalitsol"><img class="p-1" src="./images/footer icon/x.png"
+                                alt=""></a>
+                        <img class="p-1" src="./images/footer icon/linkdin.png" alt="">
+                        <a href="https://www.instagram.com/jkglobalitsolutions_officials/"><img class="p-1"
+                                src="./images/footer icon/insta.png" alt=""></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+    <div style="background-color: #d21312;"
+        class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
+        <p class="mb-0"><b>&copy; 2024 JK Global IT Solutions.</b></p>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const streamSelect = document.getElementById('streamSelect');
+            const subStreamSelect = document.getElementById('subStreamSelect');
+
+            const subStreams = {
+                engineering: {
+                    placeholder: 'Select Engineering Department Stream',
+                    options: [
+                        'Internship For CSE',
+                        'Internship For IT',
+                        'Internship For ECE',
+                        'Internship For EEE',
+                        'Internship For AI & DS',
+                        'Internship For Biomedical',
+                        'Internship For EIE',
+                        'Internship For ICE',
+                        'Internship For Civil',
+                        'Internship For Mechanical',
+                    ]
+                },
+                mba: {
+                    placeholder: 'Select MBA Specialization',
+                    options: [
+                        'MBA in Finance',
+                        'MBA in Human Resources Management',
+                        'MBA in Marketing',
+                        'MBA in Information Technology (IT)',
+                        'MBA in Operations Management'
+                    ]
+                },
+                'arts-science': {
+                    placeholder: 'Select Arts & Science Stream',
+                    options: [
+                        'Internship For BCA',
+                        'Internship For MCA',
+                        'Internship For B.SC',
+                        'Internship For M.SC',
+                        'Internship For B.COM',
+                        'Internship For BBA',
+                    ]
+                },
+                platform: {
+                    placeholder: 'Select Platform Area',
+                    options: [
+                        'Internship in Web Development',
+                        'Internship in Embedded Systems',
+                        'Internship in IOT',
+                        'Internship in JAVA',
+                        'Internship in Android',
+                        'Internship in DOTNET',
+                        'Internship in Cloud Computing',
+                        'Internship in Bigdata',
+                        'Internship in Artificial Intelligence',
+                    ]
+                }
+            };
+
+            streamSelect.addEventListener('change', function () {
+                const selectedStream = streamSelect.value;
+                const { placeholder, options } = subStreams[selectedStream] || { placeholder: 'Select Sub-Stream', options: [] };
+
+                subStreamSelect.innerHTML = `<option class="bg-danger text-light" value="" disabled selected>${placeholder}</option>`;
+
+                options.forEach(function (subStream) {
+                    const option = document.createElement('option');
+                    option.value = subStream;
+                    option.textContent = subStream;
+                    subStreamSelect.appendChild(option);
+                });
+            });
+        });
+
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+            sendEmail(); // Call the function to send email
+            sendWhatsAppMessage(); // Call the function to send WhatsApp message
+        });
+
+        function sendEmail() {
+            var firstName = document.getElementById("firstName").value;
+            var location = document.getElementById("location").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var education = document.getElementById("education").value;
+            var position = document.getElementById("position").value;
+            var skills = document.getElementById("skills").value;
+            var projects = document.getElementById("projects").value;
+            var stream = document.getElementById("streamSelect").value;
+            var subStream = document.getElementById("subStreamSelect").value;
+
+            var templateParams = {
+                firstName: firstName,
+                location: location,
+                phone: phone,
+                email: email,
+                education: education,
+                position: position,
+                skills: skills,
+                projects: projects,
+                stream: stream,
+                subStream: subStream,
+                cv: 'No CV uploaded', // Placeholder for CV field
+            };
+
+            emailjs
+                .send("service_7v7y9tv", "template_rfg4ldh", templateParams)
+                .then(function (response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    window.alert("Sent successfully!");
+                })
+                .catch(function (error) {
+                    console.error("FAILED...", error);
+                    window.alert("Failed to send. Please try again.");
+                });
+        }
+
+        function sendWhatsAppMessage() {
+            var firstName = encodeURIComponent(document.getElementById("firstName").value);
+            var location = encodeURIComponent(document.getElementById("location").value);
+            var phone = encodeURIComponent(document.getElementById("phone").value);
+            var email = encodeURIComponent(document.getElementById("email").value);
+            var education = encodeURIComponent(document.getElementById("education").value);
+            var position = encodeURIComponent(document.getElementById("position").value);
+            var skills = encodeURIComponent(document.getElementById("skills").value);
+            var projects = encodeURIComponent(document.getElementById("projects").value);
+            var stream = encodeURIComponent(document.getElementById("streamSelect").value);
+            var subStream = encodeURIComponent(document.getElementById("subStreamSelect").value);
+
+            var message = `*Contact Form Submission*%0A%0A` +
+                `*First Name:* ${firstName}%0A` +
+                `*Location:* ${location}%0A` +
+                `*Phone Number:* ${phone}%0A` +
+                `*Email ID:* ${email}%0A` +
+                `*Education:* ${education}%0A` +
+                `*Position:* ${position}%0A` +
+                `*Skills and Competencies:* ${skills}%0A` +
+                `*Projects:* ${projects}%0A` +
+                `*Stream:* ${stream}%0A` +
+                `*Sub-Stream:* ${subStream}%0A` +
+                `*CV:* No CV uploaded`; // Placeholder for CV field
+
+            var whatsappUrl = `https://api.whatsapp.com/send?phone=8438438413&text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const enquiryLink = document.getElementById('enquiry-link');
+        const popupForm = document.getElementById('popup-form');
+        const closeBtn = document.getElementById('close-btn');
+
+        enquiryLink.addEventListener('click', () => {
+            popupForm.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popupForm.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === popupForm) {
+                popupForm.style.display = 'none';
+            }
+        });
+
+        const form = document.getElementById('enquiry-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // Handle form submission logic here
+            // For example, send the data to your server or show a success message
+            alert('Form submitted!');
+        });
+    });
+</script>
+
+<!-- Enquiry Link -->
+<style>
+    /* Basic styles */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #enquiry-link {
+        cursor: pointer;
+        color: #007BFF;
+        text-decoration: underline;
+    }
+
+    /* Popup Form Styles */
+    .popup-form {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #d21312;
+        /* Set border color to #d21312 */
+        border-radius: 4px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #d21312;
+        /* Set background color to #d21312 */
+        color: #fff;
+        /* Set text color to white */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #a10c0c;
+        /* Slightly darker shade for hover effect */
+    }
+</style>
+
+<!-- Popup Form -->
+<div id="popup-form" class="popup-form">
+    <div class="form-container">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>Enquiry Form</h2>
+        <form id="enquiry-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="company">Your Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="description">Describe what you need:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+</html>
