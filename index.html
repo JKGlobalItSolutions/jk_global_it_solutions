@@ -182,36 +182,142 @@
 
   <main>
     <!-- Banner section -->
-    <div style="height: 470px;" class="banner container-fluid d-flex align-items-center ">
-      <div class="row w-100">
-        <div
-          class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light text-center text-lg-left">
-          <div>
-            <h2 class="fw-bolder">Mobile Application</h2>
+    <main>
+      <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-            <style>
-              h2 {
-                font-size: 45px;
-              }
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-              @media only screen and (max-width: 600px) {
-                h2 {
-                  font-size: 30px;
-                }
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
 
-              }
-            </style>
-            </style>
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
 
-            </style>
-            <p style="font-size: 18px;" class="h6 fw-bolder">"Make a global impact with your innovative thinking"</p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-          <img class="img-fluid" src="./images/cuate.png" alt="">
-        </div>
-      </div>
-    </div>
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="slider">
+<div class="slides">
+  <!-- Duplicate slides to create seamless scrolling -->
+  <div class="slide"><img src="./images/index banner 1.png" alt="Slide 1"></div>
+  <div class="slide"><img src="./images/index banner 2.png" alt="Slide 2"></div>
+  <div class="slide"><img src="./images/index banner 3.png" alt="Slide 3"></div>
+  <div class="slide"><img src="./images/index banner 4.png" alt="Slide 4"></div>
+  <div class="slide"><img src="./images/index banner 5.png" alt="Slide 5"></div>
+
+  <!-- Duplicate slides again -->
+  <div class="slide"><img src="./images/index banner 1.png" alt="Slide 1"></div>
+  <div class="slide"><img src="./images/index banner 2.png" alt="Slide 2"></div>
+  <div class="slide"><img src="./images/index banner 3.png" alt="Slide 3"></div>
+  <div class="slide"><img src="./images/index banner 4.png" alt="Slide 4"></div>
+  <div class="slide"><img src="./images/index banner 5.png" alt="Slide 5"></div>
+
+</div>
+<button class="nav-button prev">&#10094;</button>
+<button class="nav-button next">&#10095;</button>
+</div>
+
+<script>
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+const slideWidth = 100; // Assuming each slide takes 100% width
+let currentIndex = 0;
+let slideInterval;
+
+function goToSlide(index) {
+slides.style.transition = 'transform 0.5s ease';
+slides.style.transform = `translateX(-${index * slideWidth}%)`;
+currentIndex = index;
+
+// When reaching the cloned slides, jump back to the start
+if (index >= slideCount / 2) {
+setTimeout(() => {
+  slides.style.transition = 'none';
+  slides.style.transform = 'translateX(0)';
+  currentIndex = 0;
+}, 500); // Match this delay to the transition time
+}
+}
+
+function nextSlide() {
+goToSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+if (currentIndex > 0) {
+goToSlide(currentIndex - 1);
+} else {
+slides.style.transition = 'none';
+slides.style.transform = `translateX(-${(slideCount / 2 - 1) * slideWidth}%)`;
+currentIndex = slideCount / 2 - 1;
+setTimeout(() => {
+  slides.style.transition = 'transform 0.5s ease';
+  goToSlide(currentIndex - 1);
+}, 0);
+}
+}
+
+function startSlideShow() {
+slideInterval = setInterval(nextSlide, 3000); // Change slides every 3 seconds
+}
+
+function stopSlideShow() {
+clearInterval(slideInterval);
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+nextSlide();
+stopSlideShow();
+startSlideShow();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+prevSlide();
+stopSlideShow();
+startSlideShow();
+});
+
+startSlideShow();
+
+</script>
+  </main>
+  
     <!-- Banner section -->
     <!-- Content  Section-->
     <div class="content container my-5">
