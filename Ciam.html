@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +15,43 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
     }
-    
+
     a {
       text-decoration: none;
       color: inherit;
     }
-    
+
     .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
-    
+
     /* Header styles */
     .header {
-      background:firebrick;
+      background: firebrick;
       color: white;
       padding: 80px 0;
     }
-    
+
     .header-content {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
     }
-    
+
     .header-text {
       flex: 1;
       min-width: 300px;
     }
-    
+
     .header-box {
       flex: 1;
       min-width: 300px;
@@ -59,65 +60,65 @@
       border-radius: 8px;
       backdrop-filter: blur(10px);
     }
-    
+
     .header h1 {
       font-size: 3rem;
       font-weight: 800;
       line-height: 1.2;
       margin-bottom: 20px;
     }
-    
+
     .header p {
       font-size: 1.2rem;
       color: rgba(255, 255, 255, 0.9);
       margin-bottom: 20px;
     }
-    
+
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 20px;
     }
-    
+
     .tag {
       background-color: rgba(255, 255, 255, 0.1);
       padding: 5px 15px;
       border-radius: 50px;
       font-size: 0.9rem;
     }
-    
+
     /* Overview section */
     .overview {
       background-color: #f8fafc;
       padding: 60px 0;
       text-align: center;
     }
-    
+
     .overview p {
       max-width: 800px;
       margin: 0 auto 30px;
       font-size: 1.1rem;
       color: #475569;
     }
-    
+
     /* Features section */
     .features {
       padding: 80px 0;
     }
-    
+
     .section-title {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 60px;
     }
-    
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
-    
+
     .feature-card {
       border: 1px solid #e2e8f0;
       border-radius: 8px;
@@ -125,12 +126,12 @@
       transition: all 0.3s ease;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
-    
+
     .feature-card:hover {
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
       transform: translateY(-5px);
     }
-    
+
     .feature-icon {
       width: 50px;
       height: 50px;
@@ -141,22 +142,22 @@
       justify-content: center;
       margin-bottom: 20px;
     }
-    
+
     .feature-icon svg {
       width: 24px;
       height: 24px;
       color: #D21312;
     }
-    
+
     .feature-card h3 {
       font-size: 1.3rem;
       margin-bottom: 15px;
     }
-    
+
     .feature-card p {
       color: #64748b;
     }
-    
+
     /* CTA section */
     .cta {
       background-color: #D21312;
@@ -164,25 +165,25 @@
       padding: 80px 0;
       text-align: center;
     }
-    
+
     .cta h2 {
       font-size: 2rem;
       margin-bottom: 20px;
     }
-    
+
     .cta p {
       max-width: 800px;
       margin: 0 auto 30px;
       font-size: 1.1rem;
     }
-    
+
     .button-group {
       display: flex;
       gap: 15px;
       justify-content: center;
       flex-wrap: wrap;
     }
-    
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -192,77 +193,77 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-    
+
     .btn-primary {
       background-color: #D21312;
       color: white;
       border: 2px solid #D21312;
     }
-    
+
     .btn-primary:hover {
       background-color: #b30f0f;
       border-color: #b30f0f;
     }
-    
+
     .btn-secondary {
       background-color: white;
       color: #D21312;
       border: 2px solid white;
     }
-    
+
     .btn-secondary:hover {
       background-color: rgba(255, 255, 255, 0.9);
     }
-    
+
     .btn-outline {
       background-color: transparent;
       color: white;
       border: 2px solid white;
     }
-    
+
     .btn-outline:hover {
       background-color: white;
       color: #D21312;
     }
-    
+
     /* Footer */
     .footer {
       background-color: #f0ebe3;
       color: #131314;
       padding: 60px 0 30px;
     }
-    
+
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 40px;
       margin-bottom: 40px;
     }
-    
+
     .footer h3 {
       color: rgb(30, 26, 26);
       font-size: 1.2rem;
       margin-bottom: 20px;
     }
-    
+
     .footer ul {
       list-style: none;
     }
-    
+
     .footer li {
       margin-bottom: 10px;
     }
-    
+
     .footer a:hover {
       color: white;
     }
-    
+
     .social-links {
       display: flex;
       gap: 15px;
       margin-top: 20px;
     }
-    
+
     .social-icon {
       width: 36px;
       height: 36px;
@@ -273,33 +274,34 @@
       background-color: rgba(255, 255, 255, 0.1);
       transition: all 0.3s ease;
     }
-    
+
     .social-icon:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     .footer-bottom {
       text-align: center;
       padding-top: 30px;
       border-top: 1px solid #334155;
     }
-    
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .header h1 {
         font-size: 2.5rem;
       }
-      
+
       .header-content {
         flex-direction: column;
       }
-      
+
       .feature-card {
         padding: 20px;
       }
     }
   </style>
 </head>
+
 <body>
 
 
@@ -567,29 +569,30 @@
                       href="./computervision.html">computer vision</a></li>
 
 
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="ML_MLOps.html">ML,ML Ops</a>
-                      </li>
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
-                          href="DataScience.html">Data Science </a>
-                      </li>
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
-                          href="Analytics.html">Analytics </a>
-                      </li>
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
-                          href="Reports.html">Reports</a>
-                      </li>
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
-                          href="BigData,DataLake.html">Big Data ,Data Lake </a>
-                      </li>
-                      <li>
-                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
-                          href="DataFabric.html">Data Fabric</a>
-                      </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="ML_MLOps.html">ML,ML
+                      Ops</a>
+                  </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="DataScience.html">Data
+                      Science </a>
+                  </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                      href="Analytics.html">Analytics </a>
+                  </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                      href="Reports.html">Reports</a>
+                  </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                      href="BigData,DataLake.html">Big Data ,Data Lake </a>
+                  </li>
+                  <li>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="DataFabric.html">Data
+                      Fabric</a>
+                  </li>
 
 
 
@@ -602,12 +605,13 @@
 
 
               <li style="background-color: #f0ebe3;" class="dropdown-submenu">
-                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#">Quaitity Engineering <span
-                    class="float-end custom-toggle-arrow">&#187;</span></a>
+                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#">Quaitity Engineering
+                  <span class="float-end custom-toggle-arrow">&#187;</span></a>
                 <ul style="background-color: #f0ebe3;" class="dropdown-menu">
 
                   <li>
-                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="QAConultingand Strategy.html">QA Consulting & Strategy</a>
+                    <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                      href="QAConultingand Strategy.html">QA Consulting & Strategy</a>
                   </li>
                   <li>
                     <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
@@ -621,7 +625,7 @@
                     <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
                       href="ManagedTestingServices.html">Managed Testing Services</a>
                   </li>
-                
+
 
 
                 </ul>
@@ -734,7 +738,40 @@
   </header>
 
 
-  <!-- Header -->
+<!-- Banner Section -->
+<div class="banner-section mb-5">
+  <img class="banner-img" src="./images/Banner/cyber_security/Cy 1.jpg" alt="Cyber Security Banner">
+</div>
+
+<style>
+  .banner-section {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit; /* Ensures image covers the entire area */
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .banner-section {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-section {
+      height: 300px;
+    }
+  }
+</style>
 
 
 
@@ -742,30 +779,16 @@
 
 
 
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="header-text">
-          <h1>Impenetrable Cloud CIAM Services</h1>
-          <p>Ensuring secure access & providing a seamless user experience with up-to-date data protection for immunity against all threats.</p>
-          <div class="tags">
-            <span class="tag">Simplicity</span>
-            <span class="tag">Agility</span>
-            <span class="tag">Scalability</span>
-          </div>
-        </div>
-        <div class="header-box">
-          <h3>Cybersecurity Services</h3>
-          <p>Our secure CIAM services offer a robust and impenetrable cloud infrastructure coupled with intuitive and user-friendly interfaces, strictly adhering to data regulations.</p>
-        </div>
-      </div>
-    </div>
-  </header>
+
 
   <!-- Overview Section -->
   <section class="overview">
     <div class="container">
-      <p>Our CIAM integration services provide secure cloud infrastructure, seamless user experience, and compliance with data regulations. We offer comprehensive APIs and integration support to facilitate smooth integration with client systems. Our up-to-date data protection regulations, advanced identity verification, and consent management tools give you complete control over your data. Our dedicated maintenance support ensures that your data remains secure at all times.</p>
+      <p>Our CIAM integration services provide secure cloud infrastructure, seamless user experience, and compliance
+        with data regulations. We offer comprehensive APIs and integration support to facilitate smooth integration with
+        client systems. Our up-to-date data protection regulations, advanced identity verification, and consent
+        management tools give you complete control over your data. Our dedicated maintenance support ensures that your
+        data remains secure at all times.</p>
       <a href="#" class="btn btn-primary">Book a Meeting</a>
     </div>
   </section>
@@ -779,67 +802,80 @@
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <h3>Identity Verification</h3>
-          <p>We provide various identity verification options such as two-factor authentication, biometric verification, or identity proofing services, collaborating with trusted providers for accurate results.</p>
+          <p>We provide various identity verification options such as two-factor authentication, biometric verification,
+            or identity proofing services, collaborating with trusted providers for accurate results.</p>
         </div>
 
         <!-- Feature 2 -->
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
           </div>
           <h3>Data Security</h3>
-          <p>We use encryption and access controls to protect customer data in their CIAM system and regularly conduct security audits to identify and address vulnerabilities.</p>
+          <p>We use encryption and access controls to protect customer data in their CIAM system and regularly conduct
+            security audits to identify and address vulnerabilities.</p>
         </div>
 
         <!-- Feature 3 -->
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
           </div>
           <h3>User Experience</h3>
-          <p>We offer a smooth registration and login experience. Our streamlined form has minimal required fields, and we provide social login options for easy account access.</p>
+          <p>We offer a smooth registration and login experience. Our streamlined form has minimal required fields, and
+            we provide social login options for easy account access.</p>
         </div>
 
         <!-- Feature 4 -->
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
             </svg>
           </div>
           <h3>Scalability</h3>
-          <p>Our CIAM system is scalable and flexible, utilizing cloud-based infrastructure. We ensure efficient traffic handling with load balancing and caching and proactively scale resources for growth.</p>
+          <p>Our CIAM system is scalable and flexible, utilizing cloud-based infrastructure. We ensure efficient traffic
+            handling with load balancing and caching and proactively scale resources for growth.</p>
         </div>
 
         <!-- Feature 5 -->
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
           <h3>User Consent & Privacy</h3>
-          <p>We help clients manage their data-sharing preferences and privacy settings. We provide clear privacy policies that align with regulations and offer guidance for implementing best practices.</p>
+          <p>We help clients manage their data-sharing preferences and privacy settings. We provide clear privacy
+            policies that align with regulations and offer guidance for implementing best practices.</p>
         </div>
 
         <!-- Feature 6 -->
         <div class="feature-card">
           <div class="feature-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
           <h3>Maintenance & Updates</h3>
-          <p>We have a team dedicated to maintaining our CIAM system. We regularly patch security, update software, and scan for vulnerabilities. Our monitoring and alert systems detect issues and provide timely support.</p>
+          <p>We have a team dedicated to maintaining our CIAM system. We regularly patch security, update software, and
+            scan for vulnerabilities. Our monitoring and alert systems detect issues and provide timely support.</p>
         </div>
       </div>
     </div>
@@ -849,7 +885,8 @@
   <section class="cta">
     <div class="container">
       <h2>Leading with Integrity</h2>
-      <p>Ready to secure your customer identity and access management with our cloud solutions? Contact us today to learn how we can help protect your data while providing a seamless user experience.</p>
+      <p>Ready to secure your customer identity and access management with our cloud solutions? Contact us today to
+        learn how we can help protect your data while providing a seamless user experience.</p>
       <div class="button-group">
         <a href="#" class="btn btn-secondary">Book a Meeting</a>
         <a href="#" class="btn btn-outline">View Case Studies</a>
@@ -896,17 +933,20 @@
             <div class="social-links">
               <a href="#" class="social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                 </svg>
               </a>
               <a href="#" class="social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
               </a>
               <a href="#" class="social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg>
               </a>
             </div>
@@ -914,9 +954,12 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> CIAM Services. All rights reserved.</p>
+        <p>&copy;
+          <script>document.write(new Date().getFullYear())</script> CIAM Services. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
