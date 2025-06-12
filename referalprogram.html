@@ -70,14 +70,14 @@
         }
 
         .section-title {
-            color: var(--primary-color);
+            color: red;
             font-size: 1.75rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
 
         .form-label {
-            color: var(--primary-color);
+            color: red;
             font-weight: 500;
             margin-bottom: 8px;
         }
@@ -95,24 +95,24 @@
 
         .form-control:focus,
         .form-select:focus {
-            border-color: var(--primary-color);
+            border-color: red;
             box-shadow: 0 0 0 3px rgba(0, 139, 155, 0.1);
             transform: translateY(-2px);
         }
 
         .submit-btn {
-            background-color: var(--primary-color);
+            background-color: red;
             border: none;
             border-radius: 50px;
             padding: 12px 40px;
             font-weight: 500;
             transition: all 0.3s ease;
             width: 300px;
-            color: var(--white);
+            color:white;
         }
 
         .submit-btn:hover {
-            background-color: var(--primary-hover);
+            background-color: rgb(173, 61, 61);
             transform: translateY(-2px);
         }
 
@@ -125,7 +125,7 @@
         }
 
         .form-section-title {
-            color: var(--primary-color);
+            color: red;
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 20px;
@@ -142,12 +142,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
-            color: var(--text-color);
+            color:red;
         }
 
         .upload-btn:hover {
-            border-color: var(--primary-color);
-            color: var(--primary-color);
+            border-color: red;
+            color: red;
         }
 
         /* Responsive Styles */
@@ -201,8 +201,8 @@
 
         /* Checkbox Style */
         .form-check-input:checked {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
+            background-color: red;
+            border-color:red;
         }
 
         .form-check-label {
@@ -708,7 +708,7 @@
         <!-- Navbar -->
     </header>
 
-
+    <!-- 
     <style>
         .banner {
             background-image: url(./images/Rectangle\ 15.png);
@@ -721,31 +721,101 @@
             max-width: 100%;
             height: auto;
         }
-    </style>
+    </style> -->
 
 
 
 
 
+    <!-- Banner Section -->
+    <section class="banner-container" style="position: relative; text-align: center; overflow: hidden;">
+        <img src="./images/newimg/Referral Banner.png" alt="Refer and Earn IT Solutions Banner" class="banner-image"
+            style="width: 100%; height: auto; display: block;" />
 
-
-    <!-- banner -->
-    <div class="banner-container">
-        <img src="./assets/banner/Referral Banner.png" alt="IT Solutions Banner" class="banner-image">
-        <div class="overlay-text">
-            <h1>Refer & Earn with Us!</h1>
-            <p class="banner-paragraph">"Help us find the best talent and get rewarded. Your referral can make a
-                difference in someone's career."</p>
-            <button class="cta-button" id="cta-button">Start Referring Today</button>
+        <div class="overlay-text" style="
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: white;
+   
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 90%;
+      justify-content: start;
+    ">
+            <h1 style="font-size: 2.1rem; margin-bottom: 1rem;">Refer & Earn with Us!</h1>
+            <p class="banner-paragraph" style="font-size: 1rem; margin-bottom: 1.5rem;">
+                Help us find the best talent and get rewarded. Your referral can make a
+                difference in  someone's career.
+            </p>
+            <button class="cta-button" id="cta-button" style="
+        background-color: #030303;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      " onmouseover="this.style.backgroundColor='#030303';" onmouseout="this.style.backgroundColor='#030303';">
+                Start Referring Today
+            </button>
         </div>
-    </div>
+
+
+    </section>
+
+
+
+    <!-- <style>
+        .banner-container {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+
+        .cta-button {
+            background-color: black;;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: black;
+        }
+    </style>
+ -->
 
 
 
 
     <!-- Header Section -->
     <div class="header-section">
-        <h1 class="header-title  " style="font-family: 'Poppins', sans-serif; font-size: 20px;">Spot Great Talent? Refer
+        <h1 class="header-title text-danger " style="font-family: 'Poppins', sans-serif; font-size: 24px;">Spot Great Talent? Refer
             Them to HRIFY!</h1>
         <p class="header-subtitle"
             style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 16px; line-height: 28px; letter-spacing: 0.03em; text-align: justify;">
@@ -761,7 +831,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-12">
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         HRIFY Candidate Referral Program
                     </h2>
@@ -780,7 +850,7 @@
                         building a stronger and more dynamic team at HRIFY.
                     </p>
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         Specialized IT Talent
                     </h2>
@@ -820,7 +890,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-12">
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         Referral Bonus Policy
                     </h2>
@@ -838,7 +908,7 @@
                         transparency and trust in our process.
                     </p>
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         Eligibility
                     </h2>
@@ -856,7 +926,7 @@
                         our organization.
                     </p>
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         Employment Duration
                     </h2>
@@ -873,7 +943,7 @@
                         fair and consistent application of the referral bonus policy.
                     </p>
 
-                    <h2 class="text-primary-light"
+                    <h2 class="text-danger"
                         style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
                         Policy Updates
                     </h2>
@@ -1024,7 +1094,281 @@
     <!-- Footer -->
 
 
-    <div id="footer"></div>
+    
+  <footer style="background-color: #F1F1F1;" class="container-fluid p-5 fw-normal">
+    <!-- place footer here -->
+    <div class="row ">
+      <div class="col-12 col-lg-3 col-md-4">
+        <a style="text-decoration: none;color: #686D76;" href="index.html">
+          <h6 style="font-weight: 400;">Home</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="about.html">
+          <h6 style="font-weight: 400;">About</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="contact.html">
+          <h6 style="font-weight: 400;">Contact</h6>
+        </a>
+        <!-- <h6 style="font-weight: 400;">Payment Options</h6>
+        <h6 style="font-weight: 400;">Testimonials</h6>
+        <h6 style="font-weight: 400;">Blog</h6> -->
+        <a style="text-decoration: none;color: #686D76;" href="careers.html">
+          <h6 style="font-weight: 400;">Careers</h6>
+        </a>
+        <!-- <h6 style="font-weight: 400;">FAQ</h6>
+        <h6 style="font-weight: 400;">Feedback</h6> -->
+        <a style="text-decoration: none;color: #686D76;" href="clients.html">
+          <h6 style="font-weight: 400;">Clients</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="resweb.html">
+          <h6 style="font-weight: 400;">Responsive Web Design</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+          <h6 style="font-weight: 400;">Web Design</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="webdesign.html">
+          <h6 style="font-weight: 400;">Web Maintenance</h6>
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4">
+
+        <a style="text-decoration: none;color: #686D76;" href="custtomweb.html">
+          <h6 style="font-weight: 400;">Custom Web Applications</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="ecommerceweb.html">
+          <h6 style="font-weight: 400;">E Commerce Web Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="businessweb.html">
+          <h6 style="font-weight: 400;">Business Web Design </h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="cmsweb.html">
+          <h6 style="font-weight: 400;">CMS Web Design</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="webapp.html">
+          <h6 style="font-weight: 400;">Web Application</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="matrimony.html">
+          <h6 style="font-weight: 400;">Matrimony Web Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="businesssol.html">
+          <h6 style="font-weight: 400;">Business Solutions</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="talent.html">
+          <h6 style="font-weight: 400;">Talent Management</h6>
+        </a>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-4">
+        <a style="text-decoration: none;color: #686D76;" href="domains.html">
+          <h6 style="font-weight: 400;">Domains, Hosting and Cloud</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="google.html">
+          <h6 style="font-weight: 400;">Google Work Partner</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="aws.html">
+          <h6 style="font-weight: 400;">AWS Services Implementations</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="digital.html">
+          <h6 style="font-weight: 400;">Digital Marketing and Social Media</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="mobileapp.html">
+          <h6 style="font-weight: 400;">Mobile Applications </h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="marketting.html">
+          <h6 style="font-weight: 400;">Marketing Support Services</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="personal.html">
+          <h6 style="font-weight: 400;">Personal and Enterprise Email</h6>
+        </a>
+        <a style="text-decoration: none;color: #686D76;" href="email.html">
+          <h6 style="font-weight: 400;">Email Campaign Management</h6>
+        </a>
+      </div>
+
+      <div style="line-height: 1px;" class="col-12 col-lg-3 col-md-12 text-center">
+
+        <div class="py-2 mb-3 ">
+          <img src="./images/New Logo 2.png" style="width: auto; height: 90px;" alt="">
+        </div>
+        <!-- popup -->
+        <div class="pop">
+          <a href="#" class="text-light p-2 px-4 rounded" style="background-color: #d21312; text-decoration: none;"
+            id="downloadBtn">Download Brochure</a>
+        </div>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <div class="container">
+              <img src="./images/pop up logo.png" alt="Logo" class="logo">
+              <hr style="color: black; font-weight: 900;">
+              <div class="row d-flex align-items-center brochure">
+                <div class="col-12 col-lg-9 text-center text-lg-start">
+                  <h4>Download IT Brochure</h4>
+                </div>
+                <div class="col-3">
+                  <a href="./images/JK Global IT Solutions Portfolio.pdf">
+                    <img class="img-fluid" src="./images/download icon.png" alt="Download">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <hr style="color: black; font-weight: 900;">
+              <div class="row d-flex align-items-center brochure">
+                <div class="col-12 col-lg-9 text-center text-lg-start">
+                  <h4 class="text-center text-lg-start">Download Networking Solutions Brochure</h4>
+                </div>
+                <div class="col-3">
+                  <a href="./images/Networking Solutions Brochure.pdf">
+                    <img class="img-fluid " src="./images/download icon.png" alt="Download">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="container">
+                  <hr style="color: black; font-weight: 900;">
+                  <div class="row d-flex align-items-center brochure">
+                      <div class="col-12 col-lg-9 text-center text-lg-start">
+                          <h4 class="text-center text-lg-start">Download Payroll Services Brochure</h4>
+                      </div>
+                      <div class="col-3">
+                          <a href="./Brochure/Payroll Services.pdf">
+                              <img class="img-fluid" src="./images/download icon.png" alt="Download">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <hr style="color: black; font-weight: 900;">
+                  <div class="row d-flex align-items-center brochure">
+                      <div class="col-12 col-lg-9 text-center text-lg-start">
+                          <h4 class="text-center text-lg-start">Download Staffing Solutions Brochure</h4>
+                      </div>
+                      <div class="col-3">
+                          <a href="./Brochure/Staffing Solutions.pdf">
+                              <img class="img-fluid" src="./images/download icon.png" alt="Download">
+                          </a>
+                      </div>
+                  </div>
+              </div> -->
+
+          </div>
+        </div>
+
+        <style>
+          .popup {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+
+          .popup-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            background-color: white;
+            width: 700px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          /* Responsive styles */
+          @media (max-width: 768px) {
+            .popup-content {
+              width: 90%;
+              /* Adjust width for tablets */
+              padding: 15px;
+              /* Adjust padding for tablets */
+            }
+
+            .brochure {
+              flex-direction: column;
+              /* Stack elements vertically */
+              align-items: flex-start;
+              /* Align items to the start */
+              margin-bottom: 15px;
+              /* Add some spacing */
+            }
+
+            .brochure img {
+              margin-top: 10px;
+              /* Space out the download icons */
+              width: 50%;
+              /* Adjust icon size */
+            }
+          }
+
+          @media (max-width: 480px) {
+            .popup-content {
+              width: 95%;
+              /* Adjust width for mobile */
+              padding: 10px;
+              /* Adjust padding for mobile */
+            }
+
+            .brochure {
+              align-items: center;
+              /* Center align items */
+            }
+
+            .brochure img {
+              width: 70%;
+              /* Further adjust icon size for mobile */
+            }
+          }
+        </style>
+
+        <script>
+          document.getElementById('downloadBtn').onclick = function (event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            document.getElementById('popup').style.display = 'block'; // Show the popup
+          };
+
+          // Optional: Close the popup when clicking outside of it
+          document.getElementById('popup').onclick = function (event) {
+            if (event.target === this) {
+              this.style.display = 'none'; // Hide the popup
+            }
+          };
+        </script>
+
+        <!-- popup -->
+        <p style="font-size: 15px;" class="mt-4 mb-0"><i
+            class="fa-regular fa-envelope p-1"></i>jkglobalitsolution@gmail.com
+        </p>
+        <p style="font-size: 15px;" class="p-0 m-2"><i class="fa-solid fa-phone p-1"></i>8438438413
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61559888076422"><img class="p-1"
+              src="./images/footer icon/fb.png" alt=""></a>
+          <a href="http://www.youtube.com/@Jkglobalitsolutions_official"><img class="p-1"
+              src="./images/youtube icon.png" alt=""></a>
+          <a href="https://x.com/Jkglobalitsol"><img class="p-1" src="./images/footer icon/x.png" alt=""></a>
+          <img class="p-1" src="./images/footer icon/linkdin.png" alt="">
+          <a href="https://www.instagram.com/jkglobalitsolutions_officials/"><img class="p-1"
+              src="./images/footer icon/insta.png" alt=""></a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    </div>
+
+
+
+  </footer>
+  <div style="background-color: #d21312;"
+    class=" text-center p-4 text-light align-items-center d-flex justify-content-center ">
+    <p class="mb-0"><b>&copy; 2023 JK Global IT Solutions.</b></p>
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
