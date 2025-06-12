@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital consulting services, Digital consulting agency</title>
+    <link rel="icon" type="image/png" href="./assets/logo/favicon/favicon.png" sizes="16x16">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="./components/includescript.js"></script>
+
+    <!-- banner styles and scripts -->
+    <script src="./bannerscript/bannerscript.js"></script>
+    <link rel="stylesheet" href="./bannerstyles/bannerstyle.css">
+
+
+
+
+
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+
+
+
+    <style>
+        :root {
+            --primary-color: #008B9B;
+            --primary-hover: #006d8f;
+            --secondary-color: #333;
+            --text-color: #666;
+            --white: #fff;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Form Styles */
+        .form-container {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
+            animation: slideUp 0.5s ease forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .form-control,
+        .form-select {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+            background-color: white;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 139, 155, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 40px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 300px;
+            color: var(--white);
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .form-section {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-section-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .upload-btn {
+            background-color: transparent;
+            border: 2px dashed #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            color: var(--text-color);
+        }
+
+        .upload-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+
+            .form-section {
+                padding: 16px;
+            }
+        }
+
+        /* Header Text Styles */
+        .header-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .header-subtitle {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Confirmation Message */
+        .confirmation-message {
+            text-align: center;
+            color: var(--text-color);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Checkbox Style */
+        .form-check-input:checked {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .form-check-label {
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body style="align-items: center;" class=" m-0">
+
+
+
+
+
+
+
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between py-3">
+            <a href="/"
+                class="px-3 d-flex d-lg-block d-none align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none justify-content-center justify-content-md-start">
+                <img src="./images/logo.png" height="70" alt="">
+            </a>
+            <a href=""></a>
+            <ul class="nav nav-pills align-items-center justify-content-center justify-content-md-end">
+                <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img
+                        src="./images/whatsapp_symbol.svg.png" alt=""></li>
+                <li class="nav-item px-1 d-flex justify-content-center align-items-center"><img src="./images/call.png"
+                        alt=""><a href="#" class="nav-link text-dark">+8438438413</a></li>
+                <li style="text-decoration:   none;" class="nav-item" id="enquiry-link"><a href="#"
+                        style="font-size: 10px;" class="nav-link text-light bg-danger px-3 me-2">Fast
+                        Query</a></li>
+            </ul>
+        </div>
+        <!-- Navbar -->
+        <nav style="background-color: #f0ebe3;" class="navbar navbar-expand-lg navbar-light p-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around w-100">
+                    <li class="nav-item">
+                        <a style="color: #D21312;" class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+
+                    <li style="background-color: #f0ebe3;" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul style="background-color: #f0ebe3; width: 320px; " class="dropdown-menu ">
+                            <li style="background-color: #f0ebe3;" class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#">Design &
+                                    Development
+                                    <span class="float-end custom-toggle-arrow">&#187;</span></a>
+
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="webdesign.html">Web
+                                            Design <span class="float-end custom-toggle-arrow">&#187;</span></a>
+                                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="businessweb.html">Business Web Design</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="resweb.html">Responssive Web Design</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="cmsweb.html">CMS
+                                                    Web Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="webmaintenance.html">Web Maintenance</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="webapp.html">Web
+                                            Application <span class="float-end custom-toggle-arrow">&#187;</span></a>
+                                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="custtomweb.html">Custom Web Applications </a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="ecommerceweb.html">E-Commerce Web Solutions</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="matrimony.html">Matrimony Web Solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="mobileapp.html">Mobile Application</a></li>
+
+                                    <li class="dropdown-submenu">
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="businesssol.html">Business Solution <span
+                                                class="float-end custom-toggle-arrow">&#187;</span></a>
+                                        <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="domains.html">Domains, Hosting and Cloud Solutions</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="personal.html">Personal and Enterprise Email Solutions</a>
+                                            </li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="google.html">Google Work Partner</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="email.html">Email
+                                                    Campaign Management Solutions</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="aws.html">AWS
+                                                    Services Implementations</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="design.html">Design and Branding Solutions</a></li>
+                                            <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                                    href="digital.html">Digital Marketing & Social Media Solutions</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="marketting.html">Marketting Support Services</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="webaudit.html">Website Auditing Consulting Services</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                    href="#">Networking Solutions
+                                    <span class="float-end custom-toggle-arrow">&#187;</span></a>
+
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="system.html">System
+                                            Integration & Maintenance</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="infrastructure.html">Infrastructure Management</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="server.html">Server &
+                                            Storage</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="network.html">Network
+                                            Security</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="structuredcabling.html">Structured Cabling</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="cloudnative.html">Cloud Native Solutions</a></li>
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="workplace.html">Workplace Surveillance</a></li>
+                                </ul>
+
+                            </li>
+
+
+
+
+
+                            <li style="background-color: #f0ebe3;" class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                    href="#">Cybersecurity <span class="float-end custom-toggle-arrow">&#187;</span></a>
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="Ciam.html">CIAM</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="WorkforceIdentity.html">Workforee Identity</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="SecurityEngineering.html">Security Engineering </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="ZeroTrustArchitecture.html">Zero Trust Architecture</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="GovernanceRiskManagementComplance .html">Governance Risk Management &
+                                            Complance </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="CyberDefenseInvestigation.html">Cyber Defense & Investigation</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="CyberAdvisory.html">Cyber Advisory</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="CybeerResilience.html">Cybeer Resilience</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+
+
+
+
+                            <li class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                    href="#">Blockchain
+                                    <span class="float-end custom-toggle-arrow">&#187;</span></a>
+
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./distributedtrust.html"> Distributed Trust</a></li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./Ethereum.html">Ethereum</a></li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./Hyperledger.html">
+                                            Hyperledger</a></li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./dApps.html">dApps</a></li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./nft.html">NFT</a>
+                                    </li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./ipfs.html">IPFS</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a style="font-size: 15px; font-weight: 500;" class="dropdown-item p-3"
+                                    href="./enterprice.html">Enterprise</a>
+                            </li>
+
+
+
+                            <li class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#">Managed
+                                    Services
+                                    <span class="float-end custom-toggle-arrow">&#187;</span>
+                                </a>
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./securitymanage.html">
+                                            Security Management
+                                        </a>
+
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./sitereliability.html">
+                                            Site Reliability
+                                        </a>
+
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./monitormaintace.html">
+                                            Monitoring & Maintenance
+                                        </a>
+
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./endusercompute.html">
+                                            Help Desk / End User Compute
+                                        </a>
+
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./vendormanagement.htm">
+                                            Vendor Management
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+                            <li class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#"> Data &
+                                    Analytics
+                                    <span class="float-end custom-toggle-arrow">&#187;</span></a>
+
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./internetofthings.html">internet of things(iot)</a></li>
+
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./ai_nlp.html">Ai &
+                                            Nlp</a></li>
+
+                                    <li><a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="./computervision.html">computer vision</a></li>
+
+
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="ML_MLOps.html">ML,ML
+                                            Ops</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="DataScience.html">Data
+                                            Science </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="Analytics.html">Analytics </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="Reports.html">Reports</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="BigData,DataLake.html">Big Data ,Data Lake </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="DataFabric.html">Data
+                                            Fabric</a>
+                                    </li>
+
+
+
+                                </ul>
+
+                            </li>
+
+
+
+
+
+                            <li style="background-color: #f0ebe3;" class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="#">Quaitity
+                                    Engineering
+                                    <span class="float-end custom-toggle-arrow">&#187;</span></a>
+                                <ul style="background-color: #f0ebe3;" class="dropdown-menu">
+
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="QAConultingand Strategy.html">QA Consulting & Strategy</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="AgileTesting.html">Agile Testing </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="IndependentCertification.html">Indeoendent Certification </a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                            href="ManagedTestingServices.html">Managed Testing Services</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a style="font-size: 15px;font-weight: 500;" class="nav-link" href="talent.html">Talent
+                            Management</a>
+                    </li>
+                    <li style="background-color: #f0ebe3;" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our Products
+                        </a>
+                        <ul style="background-color: #f0ebe3; width: 320px; " class="dropdown-menu ">
+                            <li style="background-color: #f0ebe3;" class="dropdown-submenu">
+                                <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3"
+                                    href="SaleNutpam.html">Sale
+                                    Nutpam </a>
+
+                            </li>
+                            <!-- <li class="dropdown-submenu">
+                      <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="hrify.html">Hrify </a>
+                   
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a style="font-size: 15px;font-weight: 500;" class="dropdown-item p-3" href="jkerp.html">JK ERP </a>
+                   
+                    </li> -->
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a style="font-size: 15px;font-weight: 500;" class="nav-link" href="intern.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-size: 15px;font-weight: 500;" class="nav-link" href="clients.html">Clients</a>
+                    </li>
+
+
+                    <!-- <li class="nav-item">
+            <a style="font-size: 15px;font-weight: 500;" class="nav-link" href="careers.html">Careers</a>
+          </li> -->
+
+
+                    <!-- Careers Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" href="Careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="Internship.html">Internship</a></li>
+                            <li><a class="dropdown-item" href="referalprogram.html">Referral Program</a></li>
+                            <li class="dropdown-item">
+                                <a class="nav-link blinking-text" href="Hrify_Academy.html">Academy</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a style="font-size: 15px;font-weight: 500;" class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <style>
+            .dropdown:hover>.dropdown-menu {
+                display: block !important;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block !important;
+                left: 100%;
+                margin-top: -37px;
+            }
+
+            .dropdown-item {
+                font-size: small;
+                /* 13px */
+            }
+
+            .dropdown-toggle::after {
+                font-size: var(--font-md);
+                margin-bottom: -2px;
+            }
+
+            .dropdown-menu li a.active {
+                color: #fff;
+            }
+
+            .custom-toggle-arrow {
+                font-size: 18px;
+                margin-top: 1px;
+                line-height: 12px;
+            }
+
+            @media (max-width: 991.98px) {
+
+                /* Tablet and Mobile view */
+                .dropdown-menu {
+                    position: static;
+                    float: none;
+                    width: 100%;
+                }
+
+                .dropdown-submenu .dropdown-menu {
+                    position: static;
+                    float: none;
+                    margin-top: 0;
+                    width: 100%;
+                }
+
+                .dropdown-submenu:hover>.dropdown-menu {
+                    display: block;
+                    margin-top: 0;
+                }
+
+                .dropdown-item {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        </style>
+        <!-- Navbar -->
+    </header>
+
+
+    <style>
+        .banner {
+            background-image: url(./images/Rectangle\ 15.png);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+
+
+
+
+
+    <!-- banner -->
+    <div class="banner-container">
+        <img src="./assets/banner/Referral Banner.png" alt="IT Solutions Banner" class="banner-image">
+        <div class="overlay-text">
+            <h1>Refer & Earn with Us!</h1>
+            <p class="banner-paragraph">"Help us find the best talent and get rewarded. Your referral can make a
+                difference in someone's career."</p>
+            <button class="cta-button" id="cta-button">Start Referring Today</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <h1 class="header-title  " style="font-family: 'Poppins', sans-serif; font-size: 20px;">Spot Great Talent? Refer
+            Them to HRIFY!</h1>
+        <p class="header-subtitle"
+            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 16px; line-height: 28px; letter-spacing: 0.03em; text-align: justify;">
+            We're always looking for talented individuals to join our dynamic team at HRIFY.
+            If you know someone who would thrive in our innovative environment and align with our vision,
+            refer them to us! Let's work together to create incredible opportunities.
+        </p>
+    </div>
+
+
+    <section style="padding: 3rem 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-12">
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        HRIFY Candidate Referral Program
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        Introduce us to exceptional talent! Refer a friend, former colleague, or family member with the
+                        right skills to join HRIFY. We are always looking for skilled professionals across diverse
+                        fields, including IT and non-IT roles.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        By participating in our referral program, you play a vital role in helping us identify top
+                        candidates who align with our company’s mission and values. Your recommendations contribute to
+                        building a stronger and more dynamic team at HRIFY.
+                    </p>
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        Specialized IT Talent
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        Access a pool of skilled IT professionals with expertise across various technologies, including
+                        software development, networking, cybersecurity, and cloud computing.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        We are constantly expanding our network of IT specialists who are proficient in modern
+                        frameworks and tools such as React, Angular, Python, Java, AWS, and DevOps practices. Your
+                        referrals can help us discover new talents that can innovate and drive technological
+                        advancements.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-12 col-12">
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        Successfully referring a candidate can earn you a one-time bonus. Refer to the HRIFY policy
+                        below for more details. It's our way of saying thank you for connecting us with high-quality
+                        candidates who fit our culture and contribute to our success.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        Your continued support in identifying and recommending candidates helps us maintain a robust
+                        pipeline of professionals ready to make an impact. Let’s grow together!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-12">
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        Referral Bonus Policy
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        HRIFY values your referrals! Earn a referral bonus when the candidate you refer is hired by
+                        HRIFY or its clients, subject to the following conditions.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        The bonus structure is designed to reward you fairly for your contribution. Payouts are
+                        processed promptly upon successful completion of the candidate's employment milestones, ensuring
+                        transparency and trust in our process.
+                    </p>
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        Eligibility
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        The referred candidate should not have been in contact with an HRIFY recruiter in the past 3
+                        months.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        This policy ensures that your referrals are unique and genuinely add to our candidate pool. We
+                        encourage you to refer professionals from your network who you believe will be a great fit for
+                        our organization.
+                    </p>
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        Employment Duration
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        The referred candidate must successfully complete 90 days of active employment before the
+                        referral bonus is awarded.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        This time frame allows us to evaluate the candidate’s performance and commitment while ensuring
+                        fair and consistent application of the referral bonus policy.
+                    </p>
+
+                    <h2 class="text-primary-light"
+                        style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; margin-bottom: 16px;">
+                        Policy Updates
+                    </h2>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        HRIFY reserves the right to modify, update, or discontinue this policy at any time.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        We are committed to keeping you informed of any changes in our referral program. Regular updates
+                        will be shared through official communication channels, ensuring you are always aware of the
+                        latest policies.
+                    </p>
+
+                    <p
+                        style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                        <strong>Note:</strong> The referral bonus currently applies only to candidates and referrers
+                        within the North America region. However, we encourage you to refer talented professionals from
+                        any location, as we are always eager to connect with exceptional individuals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-12">
+                <p
+                    style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                    Let’s work together to build a stronger, more talented team! Your referrals help us find outstanding
+                    professionals who contribute to our shared success and drive HRIFY’s mission forward.
+                </p>
+
+                <p
+                    style="font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 28px; letter-spacing: 0.03em; text-align: justify; margin-bottom: 24px;">
+                    If you have any questions about the referral process or need assistance, feel free to contact our HR
+                    team. We are here to support you every step of the way and make your experience seamless and
+                    rewarding.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Referral Form Section -->
+    <section class="py-1">
+        <div class="container">
+            <div class="form-container">
+                <form>
+                    <!-- Your Details Section -->
+                    <div class="form-section">
+                        <h4 class="form-section-title">Your Details</h4>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Candidate Details Section -->
+                    <div class="form-section">
+                        <h4 class="form-section-title">Candidate Details</h4>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Current Job Title</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Relevant Skills/Expertise</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Role/Department</label>
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Select Department</option>
+                                    <option>IT</option>
+                                    <option>HR</option>
+                                    <option>Marketing</option>
+                                    <option>Engineering</option>
+                                    <option>Legal</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">How do you know this candidate?</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Any comments or notes about the candidate</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Upload Resume</label>
+                                <a href="https://forms.google.com/your-form-link" target="_blank"
+                                    class="upload-btn d-block text-decoration-none">
+                                    <i class="fas fa-cloud-upload-alt fa-2x mb-2"></i>
+                                    <p class="mb-0">Click to upload via Google Form</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation Section -->
+                    <div class="form-section">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" required id="confirmCheck">
+                            <label class="form-check-label" for="confirmCheck">
+                                I confirm that the information provided is accurate and that I have obtained the
+                                candidate's consent to share their details with HRIFY.
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="submit-btn">Submit Referral</button>
+                            <p class="confirmation-message">
+                                Thank you for your referral! We will review the candidate's details and get in touch if
+                                there's a suitable opportunity. Stay tuned for updates!
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <div id="footer"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+
+</html>
