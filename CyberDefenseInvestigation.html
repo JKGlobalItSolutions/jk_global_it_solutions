@@ -822,10 +822,71 @@
   </header>
 
 
-<!-- Banner Section -->
-<div class="banner-section mb-5">
-  <img class="banner-img" src="./images/Banner/cyber_security/Cy 6.jpg" alt="Cyber Security Banner">
-</div>
+
+
+ <!-- Banner section -->
+    <div class="banner container-fluid">
+      <div class="row h-100">
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light">
+          <h2 class="fw-bolder text-center">Spot, Analyze, and Stop Malicious Activities</h2>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid" src="./images/Banner/newbanimg/cyberdefrnse.png" alt="">
+        </div>
+      </div>
+    </div>
+    <style>
+      .banner {
+        background-image: url(./images/Rectangle\ 27.png);
+        height: 600px;
+      }
+
+      h2 {
+        font-size: 40px;
+        color: black;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .banner {
+          height: 400px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    </style>
+
+<style>
+  .banner-section {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit; /* Ensures image covers the entire area */
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .banner-section {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-section {
+      height: 300px;
+    }
+  }
+</style>
+
 
 <style>
   .banner-section {

@@ -726,46 +726,38 @@
 
 
 
-
-
-    <!-- Banner Section -->
-    <section class="banner-container" style="position: relative; text-align: center; overflow: hidden;">
-        <img src="./images/newimg/Referral Banner.png" alt="Refer and Earn IT Solutions Banner" class="banner-image"
-            style="width: 100%; height: auto; display: block;" />
-
-        <div class="overlay-text" style="
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      color: white;
-   
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 90%;
-      justify-content: start;
-    ">
-            <h1 style="font-size: 2.1rem; margin-bottom: 1rem;">Refer & Earn with Us!</h1>
-            <p class="banner-paragraph" style="font-size: 1rem; margin-bottom: 1.5rem;">
-                Help us find the best talent and get rewarded. Your referral can make a
-                difference in  someone's career.
-            </p>
-            <button class="cta-button" id="cta-button" style="
-        background-color: #030303;
-        color: white;
-        border: none;
-        padding: 0.8rem 2rem;
-        font-size: 18px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      " onmouseover="this.style.backgroundColor='#030303';" onmouseout="this.style.backgroundColor='#030303';">
-                Start Referring Today
-            </button>
+ <!-- Banner section -->
+    <div class="banner container-fluid">
+      <div class="row h-100">
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-light">
+          <h2 class="fw-bolder text-center">Referral Program</h2>
         </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid" src="./images/Banner/newbanimg/refferlbanner.png" alt="">
+        </div>
+      </div>
+    </div>
+    <style>
+      .banner {
+        background-image: url(./images/Rectangle\ 27.png);
+        height: 600px;
+      }
 
+      h2 {
+        font-size: 50px;
+        color: black;
+      }
 
-    </section>
+      @media only screen and (max-width: 600px) {
+        .banner {
+          height: 400px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    </style>
 
 
 
