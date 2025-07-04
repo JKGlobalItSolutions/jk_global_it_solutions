@@ -474,39 +474,62 @@
   <main>
 
 
-    <!-- Banner section -->
-    <div class="banner container-fluid">
-      <div class="row h-100">
-        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center text-light">
-          <h2 class="fw-bolder text-center">JK Global IT Solutions
-          </h2>
-        </div>
-        <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
-          <img class="img-fluid w-50" src="./images/Banner/newbanimg/pop up logo.png" alt="">
-        </div>
-      </div>
+  <!-- Talent Management Banner -->
+<div class="talent-banner container-fluid text-white d-flex align-items-center">
+  <div class="row w-100">
+    <!-- Text Content -->
+    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start px-5 py-4">
+      <h2 class="fw-bold display-5">Talent Management</h2>
+      <p class="mt-3 fs-5 text-black">
+        “Talent management is the strategic process of attracting, developing, retaining, and utilizing people with
+        the required skills and aptitude to meet current and future organizational goals. It ensures the right talent
+        is in the right role, enhancing productivity and employee satisfaction.”
+      </p>
     </div>
-    <style>
-      .banner {
-        background-image: url(./images/Rectangle\ 27.png);
-        height: 600px;
-      }
 
-      h2 {
-        font-size: 36px;
-        color: black;
-      }
+    <!-- Image Content -->
+    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-4">
+      <img
+        src="./images/Banner/newbanimg/pop up logo.png"
+        alt="Talent Management Illustration"
+        class="img-fluid"
+        style="max-width: 80%; height: auto;"
+      />
+    </div>
+  </div>
+</div>
 
-      @media only screen and (max-width: 600px) {
-        .banner {
-          height: 400px;
-        }
+<style>
+  .talent-banner {
+    min-height: 500px;
+    background: linear-gradient(90deg, #c62c65 0%, #994cd3 100%);
+    color: white;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
+  }
 
-        h2 {
-          font-size: 30px;
-        }
-      }
-    </style>
+  .talent-banner h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .talent-banner {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .talent-banner .col-lg-6 {
+      padding: 1rem !important;
+    }
+
+    .talent-banner h2 {
+      font-size: 28px;
+    }
+
+    .talent-banner p {
+      font-size: 16px;
+    }
+  }
+</style>
 
 
 
